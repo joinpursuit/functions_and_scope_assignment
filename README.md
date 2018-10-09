@@ -1,7 +1,7 @@
 # Function Exercies
-_NOTE:_ I am not asking for a specific ES syntax, but please note that you need to be able to do both. 
+_NOTE:_ I am not asking for a specific ES syntax, but please note that you need to be able to do both.
 
-1. What will the following code log? Why? 
+1. What will the following code log? Why?
   ```js
 let greeting = 'hi'
 
@@ -11,31 +11,98 @@ function hello(){
 
 hello()
 console.log(greeting)
-  
+
+// 'bye' will be logged into the console, because the hello function re-assigns the variable greeting to 'bye'.
+
   ```
-  
+
  2. Write a function that returns the largest of two numbers. If they are equal, return the second one.
- 
+
+ ```js
+ function largestOfTwo (num1, num2) {
+   if (num1 === num2) {
+     return num2;
+   } else if (num1 > num2) {
+     return num1;
+   } else {
+     return num2;
+   }
+ };
+ ```
+
  3. Write a function named getDogAge that takes one argument: a dog's age in human years. The function returns the dog's age in dog years. The conversion rate is 1 human year to 7 dog years.
 
     * Call the function and log the result.
 
+```js
+const getDogAge = (humanAge) => {
+  let dogAge = humanAge * 7;
+  return dogAge;
+};
+console.log(getDogAge(3));
+```
+
 4. Create two functions that calculate properties of a circle, using the definitions [here](http://math2.org/math/geometry/circles.htm)
 
   * Create a function called calcCircumfrence that takes the radius as an argument and return the circumference. Call the function and log the circumference:
-  * Create a function called calcArea that takes the radius as an argument and returns the area.
-  
-Create a third function circleProps that takes the radius as an argument, calls the two other functions, and logs the area and circumference. The output should look like this:
 
-"The circumference is ___".
+```js
+const calcCircumfrence = (radius) => {
+  let circumference = 2 * Math.PI * radius;
+  return circumference;
+};
 
- "The area is ___".
+
+  // * Create a function called calcArea that takes the radius as an argument and returns the area.
+
+
+function calcArea (radius) {
+  let area = Math.PI * (radius * radius)
+  return area;
+};
+
+// Create a third function circleProps that takes the radius as an argument, calls the two other functions, and logs the area and circumference. The output should look like this:
+//
+// "The circumference is ___".
+//
+//  "The area is ___".
+
+
+ function circleProps (radius) {
+   let areaLog = console.log(`The area is ${calcArea(radius)}`);
+   let circumferenceLog = console.log(`The circumference is ${calcCircumfrence(radius)}`);
+   return circumferenceLog + areaLog;
+ };
+
+```
+
 
 5. Make a temperature converter. Use google to find the conversion formulas.
 
   * Create a function called celciusToFahrenheit that takes a temperature in Celsius and returns it in Fahrenheit.
   * Create a function called fahrenheitToCelcius that takes a temperature in Fahrenheit and returns it in Celsius.
   * Create a function called convertTemperature that takes two arguments: a temperature and a string. If the string is 'C', use fahrenheitToCelcius to return the temperature to Celsius. If the string is 'F', use celciusToFahrenheit to convert the temperature to Fahrenheit.
+
+```js
+
+function celciusToFahrenheit (recievedCelcius) {
+  let fahrenheit = recievedCelcius * 1.8 + 32;
+  return fahrenheit + '°F';
+};
+
+const fahrenheitToCelcius = (fahrenheit) => {
+    let celcius = (fahrenheit - 32) * (5 / 9);
+    return celcius + '°C';
+};
+
+function convertTemperature (temperature, string) {
+  if (string === 'F') {
+    return celciusToFahrenheit(temperature);
+  } else {
+    return fahrenheitToCelcius(temperature);
+  }
+};
+```
 
 6. The Calculator:
 
@@ -50,4 +117,47 @@ Create a third function circleProps that takes the radius as an argument, calls 
       3. Calculate the area of a circle with the result of #2 as the radius.
       4. Calculate and returns the percentage the squared result (#1) is of the area (#3)
 
-7. Write a function `arraySum` that takes in one argument and returns the sum of all the elements. 
+```js
+
+function square (number) {
+
+  return number * number;
+};
+
+const half = (number) => {
+
+  return number / 2;
+};
+
+function percentOf (num1, num2)  {
+
+  return (num1 / num2) * 100 + '%';
+};
+
+const areaOfCircle = (radius) => {
+
+  let area = Math.PI * (radius * radius)
+  return Math.round(area * 100) / 100;
+};
+
+function doStuff (number) {
+  let savedSquare = square(number);
+  let savedHalf = half(savedSquare);
+  let savedArea = areaOfCircle(savedHalf);
+  return percentOf(savedSquare,savedArea);
+};
+```
+
+7. Write a function `arraySum` that takes in one argument and returns the sum of all the elements.
+
+```js
+
+function arraySum (array) {
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    sum = sum + array[i];
+  };
+  return sum;
+};
+
+```
