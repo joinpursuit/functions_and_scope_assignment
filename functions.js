@@ -108,16 +108,15 @@
 //   if (str === 'C'){
 //     fahrenheitToCelsius(temp)
 //     // temp = celsius;
-//     return celsius;
+//     return celsius + " C";
 //   }else if (str === 'F'){
 //     celsiusToFahrenheit(temp)
 //     // temp = fahrenheit;
-//     return fahrenheit;
+//     return fahrenheit + " F";
 //   }
 // }
 //
-
-// console.log(convertTemperature(30, 'C'));
+// console.log(convertTemperature(98.7, 'C'));
 
 
 
@@ -143,8 +142,8 @@ function half(num){
 //   * Write a function `percentOf` that takes two numbers. Calculate what percent the first number is of the second number, and return the result as a string. For example, 2 is 50% precent of 4, so the function returns '50%'.
 
 function percentOf(num1, num2){
-  num2 = num1/num2 * 100
-  return num2 + "%"
+  num3 = num1/num2 * 100
+  return num3 + "%"
 }
 // console.log(percentOf(5,20));
 
@@ -182,9 +181,7 @@ function doStuff(num){
   // let percentRound = round(numPercent)
 
   return numPercent
-  // + " = " + percentRound;
-  // return percentRound; ---- NaN bc of % sign
-
+  // + " = " + percentRound; --- --- NaN bc of % sign
 }
 // console.log(percentOf(3,10));
 console.log(doStuff(1));
