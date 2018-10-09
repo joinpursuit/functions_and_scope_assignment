@@ -26,7 +26,7 @@
 //     return "equal"
 //   }
 // }
-// larger();
+// // larger(); - not needed
 // console.log(larger(-2000,1));
 
 
@@ -42,7 +42,7 @@
 // return dogYears
 // }
 //
-// getDogAge();
+
 // console.log(getDogAge(140));
 
 
@@ -55,7 +55,6 @@
 //   circumference = 2* Math.PI * radius
 //   return circumference;
 // }
-// calcCircumfrence()
 // console.log(calcCircumfrence(1/Math.PI));
 
 
@@ -65,7 +64,7 @@
 //   area = Math.PI * Math.pow(radius, 2);
 //   return area;
 // }
-// calcArea();
+
 // console.log(calcArea(1));
 
 
@@ -117,7 +116,7 @@
 //   }
 // }
 //
-// convertTemperature()
+
 // console.log(convertTemperature(30, 'C'));
 
 
@@ -139,6 +138,7 @@ function half(num){
   calcHalf = num/2
   return calcHalf;
 }
+// console.log(half(1));
 
 //   * Write a function `percentOf` that takes two numbers. Calculate what percent the first number is of the second number, and return the result as a string. For example, 2 is 50% precent of 4, so the function returns '50%'.
 
@@ -161,25 +161,33 @@ function areaOfCircle(radius){
 
 function round(radius){
   areaOfCircle(radius)
-  round = area.toFixed(2)
-  return round;
+  roundIt = area.toFixed(2)
+  return roundIt;
 }
-console.log(round(1));
+// console.log(round(1));
+
 
 //   * Write a function doStuff that takes one argument (a number) and does the following (using the functions you wrote earlier):
 
 //       1. Calculates and saves the square of the number.
-
-
 //       2. Calculates and saves half the value of the result of #1.
-
-
 //       3. Calculate the area of a circle with the result of #2 as the radius.
-
-
 //       4. Calculate and returns the percentage the squared result (#1) is of the area (#3)
 
+function doStuff(num){
+  let numSquared = square(num)
+  let numHalf = half(numSquared)
+  let numArea = areaOfCircle(numHalf)
+  let numPercent = percentOf(numSquared, numArea)
+  // let percentRound = round(numPercent)
 
+  return numPercent
+  // + " = " + percentRound;
+  // return percentRound; ---- NaN bc of % sign
+
+}
+// console.log(percentOf(3,10));
+console.log(doStuff(1));
 
 
 // 7. Write a function `arraySum` that takes in one argument and returns the sum of all the elements.
