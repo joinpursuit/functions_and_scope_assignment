@@ -76,7 +76,7 @@ const doStuff = (num) => {
 console.log(doStuff(5));
 
 //Question 7
-let arr = [1,2,4,5,6];
+
 const arraySum = (arr) => {
   let sum = 0;
   for (let i = 0; i < arr.length; i++) {
@@ -84,5 +84,5 @@ const arraySum = (arr) => {
   }
   return sum;
 }
-console.log(arraySum(arr));
+console.log(arraySum([1,2,4,5,6]));
 */
