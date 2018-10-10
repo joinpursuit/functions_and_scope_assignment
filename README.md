@@ -140,3 +140,15 @@ Create a third function circleProps that takes the radius as an argument, calls 
   console.log(doStuff(10))
 
 7. Write a function `arraySum` that takes in one argument and returns the sum of all the elements.
+
+const arraySum = (arr) => {
+  let sum = 0;
+
+  for (let i = 0; i < arr.length; i++){
+    sum += arr[i];
+
+  }
+  return sum;
+}
+
+console.log(arraySum([1, 2, 3]))
