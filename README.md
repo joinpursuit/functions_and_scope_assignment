@@ -187,14 +187,18 @@ console.log(arraySum(1,2,6,33,4));
 
 if i want to get the answer in an array i will just add a variable with an empty array like this:
 
-function arraySum() {
+Reed explains why it's important to use arr in arraySum instead of leaving it empty to use arguments:
+  it is clearer
+  when you comeback to the code it's you could know what is suppose to come inside the parenthesis 
+
+function arraySum(arr) {
   sum = 0;
   emt_arr = []
-  for (let i = 0; i < arguments.length; i++) {
-    sum += arguments[i];
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
     emt_arr.push(sum)
   }
   return emt_arr;
 }
-console.log(arraySum(9,5,0,1,2,3));
+console.log(arraySum([9,5,0,1,2,3]));
 console.log("the sum is: " + emt_arr[emt_arr.length - 1]);
