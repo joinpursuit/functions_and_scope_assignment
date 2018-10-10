@@ -172,3 +172,14 @@ Create a third function circleProps that takes the radius as an argument, calls 
 
 
 7. Write a function `arraySum` that takes in one argument and returns the sum of all the elements.
+
+function arraySum () {
+
+  let sum = 0;
+    for(i = 0; i < arguments.length; i++){
+      sum += arguments[i]
+  }
+  return sum
+}
+
+console.log(arraySum(1,2,6,33,4));
