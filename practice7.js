@@ -1,13 +1,27 @@
-function arraySum () {
-
-  let sum = 0;
-    for(i = 0; i < arguments.length; i++){
-      sum += arguments[i]
+function arraySum() {
+  sum = 0;
+  emt_arr = []
+  for (let i = 0; i < arguments.length; i++) {
+    sum += arguments[i];
+    emt_arr.push(sum)
   }
-  return sum
+  return emt_arr;
 }
+console.log(arraySum(9,5,0,1,2,3));
 
-console.log(arraySum(1,2,6,33,4));
+
+
+
+// function arraySum () {
+//
+//   let sum = 0;
+//     for(i = 0; i < arguments.length; i++){
+//       sum += arguments[i]
+//   }
+//   return sum
+// }
+//
+// console.log(arraySum(1,2,6,33,4));
 
 
 

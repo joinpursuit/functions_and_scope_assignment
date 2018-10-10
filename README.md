@@ -183,3 +183,17 @@ function arraySum () {
 }
 
 console.log(arraySum(1,2,6,33,4));
+
+
+if i want to get the answer in an array i will just add a variable with an empty array like this:
+
+function arraySum() {
+  sum = 0;
+  emt_arr = []
+  for (let i = 0; i < arguments.length; i++) {
+    sum += arguments[i];
+    emt_arr.push(sum)
+  }
+  return emt_arr;
+}
+console.log(arraySum(9,5,0,1,2,3));
