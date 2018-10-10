@@ -197,3 +197,4 @@ function arraySum() {
   return emt_arr;
 }
 console.log(arraySum(9,5,0,1,2,3));
+console.log("the sum is: " + emt_arr[emt_arr.length - 1]);
