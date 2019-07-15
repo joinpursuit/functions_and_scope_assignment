@@ -60,7 +60,7 @@ Input: `88`
 
 Output: `"B"`
 
-## Question 9
+## Question 6
 
 Implement a function named `repeatLog` that takes a string and a number as parameters. The function should log `message` `count` number of times.
 
@@ -71,7 +71,7 @@ Input: `"+", 10`
 Output: `++++++++++`
 
 
-## Question 10
+## Question 7
 
 Write a function named `first` that takes a number and returns an array with all the numbers from 1 to n
 
@@ -83,7 +83,7 @@ Input: `first(3)`
 Output: `[1, 2, 3]`
 
 
-## Question 11
+## Question 8
 
 Write a function that logs the numbers from 1 to x, except:
 
@@ -93,7 +93,7 @@ If the number is a multiple of 3 AND 5, log `"FizzBuzz"` instead of the number
 Your function should take in one parameter: x (the number to count up to)
 
 
-## Question 12
+## Question 9
 
 Write a function named `reverse` that takes an array as a parameter. The function should return an array in reverse order.
 
@@ -105,7 +105,7 @@ Input: `reverse([1, 2, 3])`
 Output: `[3, 2, 1]`
 
 
-## Question 13
+## Question 10
 
 Write a function that prints out the most frequently element in an array.
 
@@ -117,7 +117,7 @@ Output: `2`
 
 
 
-## Question 14
+## Question 11
 
 Write a function that sums all the even numbers in an array.
 
@@ -128,7 +128,7 @@ Input: `[1,2,5,64,23,22,91,3]`
 Output: `88`
 
 
-## Question 15
+## Question 12
 
 Write a function that flips a dictionary.  All of the keys are now values and all of the values are now keys.
 
@@ -139,7 +139,7 @@ Input: `{1: "uno", 5: "cinco"}`
 Output: `{"uno": 1, "cinco": 5}`
 
 
-## Question 16
+## Question 13
 
 Write a function that determines if a value is inside of array.
 
