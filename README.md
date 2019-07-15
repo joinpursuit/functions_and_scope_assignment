@@ -107,7 +107,7 @@ Output: `[3, 2, 1]`
 
 ## Question 10
 
-Write a function that prints out the most frequently element in an array.
+Write a function that prints out the most frequently occurring element in an array.
 
 Example:
 
