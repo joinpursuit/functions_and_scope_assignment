@@ -284,10 +284,8 @@ Output: 'false'
 \n--------------------------------------\n\n`);
 
 function valCheck(arr, val) {
-  for (let i of arr) {
-    if (i === val) return true;
-    else return false;
-  }
+  for (let i of arr) if (i === val) return true;
+  return false;
 }
 
 console.log(valCheck([1,4,6,9,10], 5));
