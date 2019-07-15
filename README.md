@@ -130,7 +130,7 @@ Output: `88`
 
 ## Question 12
 
-Write a function that flips a dictionary.  All of the keys are now values and all of the values are now keys.
+Write a function that flips an object.  All of the keys are now values and all of the values are now keys.
 
 Example:
 
