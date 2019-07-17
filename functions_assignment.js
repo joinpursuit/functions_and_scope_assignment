@@ -9,7 +9,14 @@
 // Input: `12, 4`
 //
 // Output: `12`
-//
+function largerChoice (num1, num2) {
+  if (num1 > num2) {
+    return num1;
+  } else if (num2 >= num1) {
+    return num2;
+  }
+}
+console.log(largerChoice(4,2));
 // ## Question 2
 //
 // Write a function named getDogAge that takes one argument: a dog's age in human years. The function returns the dog's age in dog years. The conversion rate is 1 human year to 7 dog years.
