@@ -36,6 +36,7 @@ const getDogAge = (age) => {
 }
 let conversion = getDogAge(4);
 console.log(conversion)
+
 // ## Question 3
 //
 // Write a function `arraySum` that takes in an array and returns the sum of all the elements.
@@ -122,10 +123,18 @@ console.log(finalGrade)
 //
 // Output: `++++++++++`
 
+//
+const repeatLog = (str,inc) =>{
+  let output = '';
+  for(let i = 0; i < inc; i++){
+      output += str
+  }
+  console.log(output)
+}
+repeatLog('+',10);
 
-//
 // ## Question 7
-//
+
 // Write a function named `first` that takes a number and returns an array with all the numbers from 1 to n
 //
 //
@@ -136,9 +145,15 @@ console.log(finalGrade)
 // Output: `[1, 2, 3]`
 //
 
-// const firstThree = () =>{
-//
-// }
+const firstThree = (n) =>{ // n is the number to create the array from
+let emptyArr = [] //create empty array to push all the values from 0 to n into the arrays
+for(let i = 1; i <= n; i++){ //the length is the value of the number
+  emptyArr.push(i) //.push is the plus equal for the array, it essentially adds elements into an array, do it in i because of the loop through the number.
+}
+return emptyArr // this is returned because it has all of the variables in the emptyArr
+}
+let something = firstThree(5)
+console.log(something)
 
 // ## Question 8
 //
@@ -164,7 +179,7 @@ const logFizzBuzz = (x) =>{
 }
 let finalFB = logFizzBuzz(15)
 console.log(finalFB)
-//
+
 // ## Question 9
 //
 // Write a function named `reverse` that takes an array as a parameter. The function should return an array in reverse order.
@@ -176,7 +191,11 @@ console.log(finalFB)
 //
 // Output: `[3, 2, 1]`
 //
-//
+const reverseArray = () =>{
+
+
+}
+
 // ## Question 10
 //
 // Write a function that prints out the most frequently occurring element in an array.
@@ -186,9 +205,9 @@ console.log(finalFB)
 // Input: `[2,1,4,2,5,2,3,23,3,3,2,2,2,24,56,2,2,5,46,2]`
 //
 // Output: `2`
-//
-//
-//
+
+
+
 // ## Question 11
 //
 // Write a function that sums all the even numbers in an array.
@@ -201,9 +220,10 @@ console.log(finalFB)
 
 let numArr = [2, 4, 9, 11, 24, 25, 34]
 const evenSum = (arr) =>{
-  for(let o = 0; o < numArr.length; o++){
-    if(numArr[o] % 2 === 0){
-      plsWork += numArr[o]
+  let plsWork = 0;
+  for(let o = 0; o < arr.length; o++){
+    if(arr[o] % 2 === 0){
+      plsWork += arr[o]
     }
   }
   return plsWork
@@ -211,6 +231,8 @@ const evenSum = (arr) =>{
 
 let printEven = evenSum(numArr)
 console.log(printEven)
+
+
 // ## Question 12
 //
 // Write a function that flips an object.  All of the keys are now values and all of the values are now keys.
@@ -220,14 +242,45 @@ console.log(printEven)
 // Input: `{1: "uno", 5: "cinco"}`
 //
 // Output: `{"uno": 1, "cinco": 5}`
-//
-//
-// ## Question 13
-//
-// Write a function that determines if a value is inside of array.
-//
-// Example:
-//
-// Input: `[1,4,6,9,10], 5`
-//
-// Output: `false`
+
+let fruits= {
+  apples:1,
+  grapes:2,
+  watermelon:3,
+  kiwi:4
+}
+
+const flipIt = (obj)=>{
+let newObj = {};
+let keys = Object.keys(obj)
+let values = Object.values(obj)
+
+for(let i = 0; i < values.length; i++){
+  newObj[values[i]] = keys[i];
+}
+return(newObj)
+}
+let finalObj = flipIt(fruits)
+console.log(finalObj)
+
+// // ## Question 13
+// //
+// // Write a function that determines if a value is inside of array.
+// //
+// // Example:
+// //
+// // Input: `[1,4,6,9,10], 5`
+// //
+// // Output: `false`
+let wheresWaldo = [1, 4, 6, 9, 10]
+const isItInArray = (value, arr) => {
+for(let w = 0; w < wheresWaldo.length; w++){
+  if(wheresWaldo[w] === value){
+     return true;
+}
+}
+return false;
+}
+
+let foundIt = isItInArray(10)
+console.log(foundIt)
