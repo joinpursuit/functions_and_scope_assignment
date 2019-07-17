@@ -251,9 +251,6 @@ console.log("_____#10_____")
 //
 let input2 = [2,1,4,2,5,2,3,23,3,3,2,2,2,24,56,2,2,5,46,2]
 const freqElementArr = (arr) => {
-  if (arr.lenth === 0) {
-    return null
-  }
   let counter = {}
   let max = arr[0]
   let maxCount = 1
@@ -269,6 +266,7 @@ const freqElementArr = (arr) => {
       maxCount = counter[value]
     }
   }
+  return max
 }
 
 let return10 = freqElementArr(input2)
