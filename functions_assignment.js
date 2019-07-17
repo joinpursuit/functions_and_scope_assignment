@@ -16,7 +16,7 @@ function largerChoice (num1, num2) {
     return num2;
   }
 }
-console.log(largerChoice(4,2));
+console.log(largerChoice(12,4));
 // ## Question 2
 //
 // Write a function named getDogAge that takes one argument:
@@ -31,17 +31,27 @@ console.log(largerChoice(4,2));
 const getDogAge = (num) => {
   return num * 7;
 }
-console.log(getDogAge(2));
+console.log(getDogAge(4));
 // ## Question 3
 //
-// Write a function `arraySum` that takes in an array and returns the sum of all the elements.
+// Write a function `arraySum` that takes in an array and returns the sum of all
+// the elements.
 //
 // Example:
 //
 // Input: `[13,2,4,-2]`
 //
 // Output: `17`
-//
+let myArray = [13, 2, 4, -2];
+const arraySum = (arr) => {
+  let sum = 0;
+  for (i in arr) {
+    sum += arr[i];
+    arr[i]++;
+  }
+  return sum;
+}
+console.log(arraySum(myArray));
 // ## Question 4
 //
 // Write a function that takes in any two numbers and return their sum.
