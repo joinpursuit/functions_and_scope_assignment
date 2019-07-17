@@ -171,7 +171,11 @@ console.log(fizzyBuzzy(24));
 //
 // Output: `[3, 2, 1]`
 //
-//
+let happyMeal = ["burger", "juice", "apple", "toy"];
+const reverse = (arr) => {
+  return arr.reverse();
+}
+console.log(reverse(happyMeal));
 // ## Question 10
 //
 // Write a function that prints out the most frequently occurring element in an array.
