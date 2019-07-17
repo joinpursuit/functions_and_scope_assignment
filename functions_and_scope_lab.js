@@ -50,7 +50,7 @@ const grader = (num) => {
 }
 
 // f.6
-const howManyEchos = (str, num) => {
+const repeatLog = (str, num) => {
   let blast = str;
   for (let i = 1; i < num; i++) {
     blast += str;
@@ -72,9 +72,9 @@ const bizzFuzzer = (num) => {
   for (let i = 1; i <= num; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
       console.log(`FizzBuzz`);
-    } else if (i % 3 === 0) {
+    } else if (!(i % 3)) {
       console.log(`Fizz`);
-    } else if (i % 5 === 0) {
+    } else if (!(i % 5)) {
       console.log(`Buzz`);
     } else {
       console.log(i);
@@ -85,8 +85,7 @@ const bizzFuzzer = (num) => {
 // f.9
 const reverseIt = (arr) => {
   let newArray = [];
-  newArray[0] = arr[arr.length - 1];
-  for (let i = arr.length - 2; i >= 0; i--) {
+  for (let i = arr.length - 1; i >= 0; i--) {
     newArray.push(arr[i]);
   }
   return newArray;
@@ -119,7 +118,7 @@ const mostElemOfArr = (arr) => {
 const sumOfTheEvens = (arr) => {
   let sum = 0;
   for (let i of arr) {
-    if (Math.abs(i % 2) === 0) {
+    if (!Math.abs(i % 2)) {
       sum += i;
     }
   }
@@ -154,7 +153,7 @@ const isElemPresent = (arr, num) => {
 // 1
 console.log("1. Write a function that returns the largest of two numbers. If they are equal, return the second one.");
 let labInput1a = 1;
-let labInput1b = 1;
+let labInput1b = 4;
 console.log(`${labInput1a}, ${labInput1b}`);
 
 let result1 = whosLarger(labInput1a, labInput1b);
@@ -214,7 +213,7 @@ let labInput6_str = "gamma";
 let labInput6_num = 5;
 console.log(`${labInput6_str}, ${labInput6_num}`);
 
-let result6 = howManyEchos(labInput6_str, labInput6_num);
+let result6 = repeatLog(labInput6_str, labInput6_num);
 console.log(result6);
 //
 spacer();
