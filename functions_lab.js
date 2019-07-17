@@ -168,7 +168,6 @@ console.log(first(5));
 // Your function should take in one parameter: x (the number to count up to)
 //
 console.log('----- Question 8 -----');
-let max = 30;
 const fizzbuzzChallenge = (end) => {
   for (let counter = 1; counter <= end; counter++) {
     if ((counter % 3) === 0 && (counter % 5) === 0) {
@@ -183,7 +182,7 @@ const fizzbuzzChallenge = (end) => {
   }
 }
 
- fizzbuzzChallenge(9);
+ fizzbuzzChallenge(15);
 
 // ## Question 9
 //
@@ -227,7 +226,17 @@ console.log('----- Question 10 -----');
 // Output: `88`
 //
 console.log('----- Question 11 -----');
+let numbers = [1, 2, 5, 64, 23, 22, 91, 3];
+const evenSum = (array) => {
+  let sum = 0;
+  for (let b = 0; b < array.length; b++) {
+  if (array[b] % 2 === 0) {
+     sum += array[b];
+    }
+  } return sum;
+}
 
+console.log(evenSum(numbers));
 // ## Question 12
 //
 // Write a function that flips a dictionary.  All of the keys are now values and all of the values are now keys.
@@ -250,3 +259,14 @@ console.log('----- Question 12 -----');
 //
 // Output: `false`
 console.log('----- Question 13 -----');
+const checkValue = (array, num) => {
+  for (let j = 0; j <= array.length; j++) {
+    if (array.includes(num)) {
+      return true;
+   } else {
+      return false;
+    }
+ }
+}
+let list = [1, 2, 3, 543, 100, 987654, -987];
+console.log(checkValue(list, -987));
