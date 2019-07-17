@@ -248,7 +248,18 @@ console.log(evenSum(numbers));
 // Output: `{"uno": 1, "cinco": 5}`
 //
 console.log('----- Question 12 -----');
+let obj = {
+  1: "uno",
+  2: "dos",
+  3: "tres"
+};
+let flipped = {};
+const flip = (Object.keys(obj).forEach(key)) => {
 
+    flipped[obj[key]] = key;
+
+ };
+ console.log(flip(obj));
 // ## Question 13
 //
 // Write a function that determines if a value is inside of array.
