@@ -61,7 +61,10 @@ console.log(arraySum(myArray));
 // Input: `14, 5`
 //
 // Output: `19`
-//
+function sumTwoNums (num1, num2) {
+  return num1 + num2;
+}
+console.log(sumTwoNums(14,5));
 // ## Question 5
 //
 // Write a function takes in any number grade and returns a corresponding letter grade.
