@@ -84,22 +84,44 @@ console.log(sumTwoNums(14,5));
 // Input: `88`
 //
 // Output: `"B"`
-//
+const letterGrade = (num1) => {
+    if (num1 === 100) {
+      return "A+";
+    } else if (num1 >= 90 && num1 <= 99) {
+      return "A";
+    } else if (num1 >= 80 && num1 <= 89) {
+      return "B";
+    } else if (num1 >= 70 && num1 <= 79) {
+    return "C";
+    } else if (num1 >= 65 && num1 <= 69) {
+    return "D";
+    } else {
+    return "F";
+  }
+}
+console.log(letterGrade(88));
 // ## Question 6
 //
-// Implement a function named `repeatLog` that takes a string and a number as parameters. The function should log `message` `count` number of times.
+// Implement a function named `repeatLog` that takes a string and a number as parameters.
+// The function should log `message` `count` number of times.
 //
 // Example:
 //
 // Input: `"+", 10`
 //
 // Output: `++++++++++`
-//
-//
+function repeatLog(str, num) {
+  let repeater= 0;
+  while (repeater < num) {
+  console.log(str);
+  repeater++;
+  }
+}
+console.log(repeatLog("meow", 8));
 // ## Question 7
 //
-// Write a function named `first` that takes a number and returns an array with all the numbers from 1 to n
-//
+// Write a function named `first` that takes a number and returns an array
+// with all the numbers from 1 to n
 //
 // Example:
 //
@@ -107,7 +129,16 @@ console.log(sumTwoNums(14,5));
 //
 // Output: `[1, 2, 3]`
 //
-//
+const first = (num) => {
+  let firstArray = [];
+  let myNum = 1;
+  while (firstArray.length < num) {
+    firstArray.push(myNum);
+    myNum ++;
+    console.log(firstArray);
+  }
+}
+console.log(first(3));
 // ## Question 8
 //
 // Write a function that logs the numbers from 1 to x, except:
@@ -117,11 +148,22 @@ console.log(sumTwoNums(14,5));
 // If the number is a multiple of 3 AND 5, log `"FizzBuzz"` instead of the number
 // Your function should take in one parameter: x (the number to count up to)
 //
-//
+function fizzyBuzzy(x) {
+  for (let newNum = 1; newNum < x; newNum++) {
+    if (newNum % 3 === 0 && newNum % 5 === 0) {
+      console.log("FizzBuzz");
+    } else if (newNum % 3 === 0 && newNum % 5 != 0) {
+      console.log("Fizz");
+    } else if (newNum % 5 === 0 && newNum % 3 != 0) {
+      console.log("Buzz");
+    }
+  }
+}
+console.log(fizzyBuzzy(24));
 // ## Question 9
 //
-// Write a function named `reverse` that takes an array as a parameter. The function should return an array in reverse order.
-//
+// Write a function named `reverse` that takes an array as a parameter.
+// The function should return an array in reverse order.
 //
 // Example:
 //
