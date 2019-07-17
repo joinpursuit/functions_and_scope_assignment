@@ -208,3 +208,64 @@ console.log('Question 11');
 console.log(' ');
 
 //Write a function that sums all the even numbers in an array.
+
+let awesomeArray = [1, 2, 5, 64, 23, 22, 91, 3];
+
+const sumOfEvenNumbers = (array) => {
+  let sum = 0;
+  for (let value of array) {
+    if (value % 2 === 0) {
+      sum += value;
+    }
+  }
+
+  return sum;
+}
+
+console.log(sumOfEvenNumbers(awesomeArray));
+
+console.log(' ');
+console.log('Question 12');
+console.log(' ');
+
+//Write a function that flips an object.  All of the keys are now values and all of the values are now keys.
+
+let myObject = {
+  1: 'uno',
+  5: 'cinco',
+};
+
+const objectFlipper = (object) => {
+  let flipper = ' ';
+  let flippedObject = {};
+
+  for (let key in object) {
+    flippedObject[object[key]] = key;
+
+  }
+  // console.log(flippedObject);
+  return flippedObject;
+}
+
+console.log(objectFlipper(myObject));
+
+console.log(' ');
+console.log('Question 13');
+console.log(' ');
+
+//Write a function that determines if a value is inside of array.
+
+let checkedArray = [1, 4, 6, 9, 10];
+
+const findValue = (num, array) => {
+  let check = false;
+  for (i = 0; i < array.length; i++) {
+    if (num === array[i]) {
+      check = true;
+    }
+  }
+
+  return check;
+}
+
+console.log(findValue(5, checkedArray));
