@@ -10,7 +10,7 @@
 //
 // Output: `12`
 console.log('----- Question 1 -----');
-function compare(num1, num2) {
+const compare = (num1, num2) => {
   if (num1 > num2) {
     return num1;
   } else {
@@ -31,10 +31,12 @@ console.log(compare(300, 300));
 //
 // Output: `28`
 console.log('----- Question 2 -----');
-function getDogAge(age) {
+const getDogAge = (age) => {
   return age * 7;
 }
+
 console.log(getDogAge(9));
+
 // ## Question 3
 //
 // Write a function `arraySum` that takes in an array and returns the sum of all the elements.
@@ -46,7 +48,7 @@ console.log(getDogAge(9));
 // Output: `17`
 console.log('----- Question 3 -----');
 let number = [1, 2, 3, 4, 5];
-function arraySum(array) {
+const arraySum = (array) => {
   let sum = 0;
   for (i = 0; i < number.length; i++) {
     sum += number[i];
@@ -54,8 +56,8 @@ function arraySum(array) {
 
   return sum;
 }
-
-console.log(arraySum(number));
+let total = arraySum(number);
+console.log(total);
 
 // ## Question 4
 //
@@ -70,8 +72,8 @@ console.log('----- Question 4 -----');
 
 let negOneHundred = -100;
 let eightyFive = 85;
-function sum(num3, num4) {
-  return num3 + num4;
+const sum = (num1, num2) => {
+  return num1 + num2;
 }
 
 console.log(sum(negOneHundred, eightyFive));
@@ -96,8 +98,7 @@ console.log(sum(negOneHundred, eightyFive));
 //
 // Output: `"B"`
 console.log('----- Question 5 -----');
-let numGrade = 65;
-function gradeConversion(grade) {
+const gradeConversion = (grade) => {
   if (grade === 100) {
     return "'A+'";
   } else if (grade > 89) {
@@ -113,7 +114,7 @@ function gradeConversion(grade) {
   }
 }
 
-console.log(gradeConversion(numGrade));
+console.log(gradeConversion(65));
 
 // ## Question 6
 //
@@ -126,6 +127,15 @@ console.log(gradeConversion(numGrade));
 // Output: `++++++++++`
 //
 console.log('----- Question 6 -----');
+let str = '';
+const repeatLog = (string, num) => {
+  for (let i = 0; i < num; i++) {
+    str += string;
+  }
+};
+
+repeatLog('~', 5);
+console.log(str);
 
 // ## Question 7
 //
@@ -139,7 +149,15 @@ console.log('----- Question 6 -----');
 // Output: `[1, 2, 3]`
 //
 console.log('----- Question 7 -----');
+let arr = [];
+const first = (num) => {
+  for (let i = 1; i <= num; i++) {
+  arr.push(i);
+}
+  return arr;
+}
 
+console.log(first(5));
 // ## Question 8
 //
 // Write a function that logs the numbers from 1 to x, except:
@@ -151,7 +169,7 @@ console.log('----- Question 7 -----');
 //
 console.log('----- Question 8 -----');
 let max = 30;
-function fizzbuzzChallenge(end) {
+const fizzbuzzChallenge = (end) => {
   for (let counter = 1; counter <= end; counter++) {
     if ((counter % 3) === 0 && (counter % 5) === 0) {
       console.log('Fizz Buzz');
@@ -165,7 +183,7 @@ function fizzbuzzChallenge(end) {
   }
 }
 
- fizzbuzzChallenge(max);
+ fizzbuzzChallenge(9);
 
 // ## Question 9
 //
@@ -179,10 +197,16 @@ function fizzbuzzChallenge(end) {
 // Output: `[3, 2, 1]`
 //
 console.log('----- Question 9 -----');
+let newArray = [3, 1, 1994];
+const reverse = (array) => {
+return array.reverse();
+}
+let result = reverse(newArray);
+console.log(result);
 
 // ## Question 10
 //
-// Write a function that prints out the most frequently element in an array.
+// Write a function that prints out the most frequent  element in an array.
 //
 // Example:
 //
