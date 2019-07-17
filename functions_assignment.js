@@ -19,14 +19,19 @@ function largerChoice (num1, num2) {
 console.log(largerChoice(4,2));
 // ## Question 2
 //
-// Write a function named getDogAge that takes one argument: a dog's age in human years. The function returns the dog's age in dog years. The conversion rate is 1 human year to 7 dog years.
+// Write a function named getDogAge that takes one argument:
+// a dog's age in human years. The function returns the dog's age in dog years.
+// The conversion rate is 1 human year to 7 dog years.
 //
 // Example:
 //
 // Input: `4`
 //
 // Output: `28`
-//
+const getDogAge = (num) => {
+  return num * 7;
+}
+console.log(getDogAge(2));
 // ## Question 3
 //
 // Write a function `arraySum` that takes in an array and returns the sum of all the elements.
