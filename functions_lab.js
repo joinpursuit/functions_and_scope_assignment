@@ -12,33 +12,33 @@
 
 console.log('=======answer#1=========')
 
-// let num1 = 12;
-// let num2 = 4;
-// function largestOfTwoNum (num1, num2) {
-//   if (num1 < num2) {
-//   return num2
-//   } else if (num1 > num2) {
-//     return num1
-//   } else {
-//     return num1,num2
-//   }
-// }
-// console.log(largestOfTwoNum(num1, num2))
+let num1 = 12;
+let num2 = 4;
+function largestOfTwoNum (num1, num2) {
+  if (num1 < num2) {
+  return num2
+  } else if (num1 > num2) {
+    return num1
+  } else {
+    return num1,num2
+  }
+}
+console.log(largestOfTwoNum(num1, num2))
 
 // #########
 
-// const largestOfTwoNum = (num1, num2) => {
-//   if (num1 < num2) {
-//     return num2
-//   } else if (num1 > num2) {
-//     return num1
-//   } else {
-//     return num1, num2
-//   }
-// }
-// let num1 = 12;
-// let num2 = 4
-// console.log(largestOfTwoNum(num1, num2))
+const largestOfTwoNum = (num1, num2) => {
+  if (num1 < num2) {
+    return num2
+  } else if (num1 > num2) {
+    return num1
+  } else {
+    return num1, num2
+  }
+}
+let num1 = 12;
+let num2 = 4
+console.log(largestOfTwoNum(num1, num2))
 
 // ## Question 2
 //
@@ -54,21 +54,21 @@ console.log('=======answer#1=========')
 
 console.log('=======answer#2=========')
 
-// function getDogAge (num) {
-// return num * 7
-// }
-// let num = 4
-// let result = num * 7
-// console.log(result)
+function getDogAge (num) {
+return num * 7
+}
+let num = 4
+let result = num * 7
+console.log(result)
 
 //#################
 
-// const getDogAge = (num) => {
-//   return num * 7
-// }
-// let num = 4
-// let result = num * 7
-// console.log(result)
+const getDogAge = (num) => {
+  return num * 7
+}
+let num = 4
+let result = num * 7
+console.log(result)
 //
 
 // ## Question 3
@@ -85,27 +85,27 @@ console.log('=======answer#2=========')
 console.log('=========answer#3=======')
 
 
-// function arraySum (arr) {
-//   // let sum = num + num[i].length
-//   return
-//
-//   i++
-// }
+function arraySum (arr) {
 
-// let arr = [13,2,4,-2];
-//
-//
-// const arraySum = (arr) => {
-//   let sum = 0;
-// for (let i = 0; i < arr.length; i++ ) {
-//   sum += arr[i]
-//   }
-//
-//   return sum
-// }
-//
-//
-// console.log(arraySum(arr))
+  return
+
+  i++
+}
+
+let arr = [13,2,4,-2];
+
+
+const arraySum = (arr) => {
+  let sum = 0;
+for (let i = 0; i < arr.length; i++ ) {
+  sum += arr[i]
+  }
+
+  return sum
+}
+
+
+console.log(arraySum(arr))
 
 //
 // ## Question 4
@@ -120,13 +120,13 @@ console.log('=========answer#3=======')
 
 console.log('===========answer#4========')
 
-// function sumOfTwoNums (num1, num2) {
-//   return num1 + num2
-// }
-// let result1  = sumOfTwoNums(100, 2)
-// console.log(result1)
-// let result2 = sumOfTwoNums(14, 5)
-// console.log(result2)
+function sumOfTwoNums (num1, num2) {
+  return num1 + num2
+}
+let result1  = sumOfTwoNums(100, 2)
+console.log(result1)
+let result2 = sumOfTwoNums(14, 5)
+console.log(result2)
 
 
 //
@@ -152,27 +152,27 @@ console.log('===========answer#4========')
 // Output: `"B"`
 //
 // console.log('=======answer#5=========')
+let num = 88
+const letterGrade = (num) => {
+  if (num >= 100) {
+    return "A+"
+  } else if (num <=99  && num >= 90){
+    return "A"
+  } else if (num >= 80 && num <= 89){
+    return "B"
+  } else if (num >= 70 && num <= 79) {
+    return "C"
+  } else if (num >= 65 && num <= 69){
+    return "D"
+  } else {
+    return "F"
+}
+}
 // let num = 88
-// const letterGrade = (num) => {
-//   if (num >= 100) {
-//     return "A+"
-//   } else if (num <=99  && num >= 90){
-//     return "A"
-//   } else if (num >= 80 && num <= 89){
-//     return "B"
-//   } else if (num >= 70 && num <= 79) {
-//     return "C"
-//   } else if (num >= 65 && num <= 69){
-//     return "D"
-//   } else {
-//     return "F"
-// }
-// }
-// // let num = 88
-// let result = letterGrade(num)
-//
-//
-// console.log(result)
+let result = letterGrade(num)
+
+
+console.log(result)
 
 
 // ## Question 6
@@ -188,13 +188,13 @@ console.log('===========answer#4========')
 
 console.log('==========answer#6=======')
 // //
-// function repeatLog (param1) {
-//   return x = x.repeat(param1)
-//   }
-// let x = "+"
-// let result = x.repeat(10)
-//
-//   console.log (result)
+function repeatLog (param1) {
+  return x = x.repeat(param1)
+  }
+let x = "+"
+let result = x.repeat(10)
+
+  console.log (result)
 //
 //
 // ## Question 7
@@ -233,21 +233,23 @@ console.log('=========answer#7===========')
 console.log('=========answer#8=========')
 
 function multiples (num) {
-  let num = 0
-for (let num = 1; num <= 100; i++) {
-  if (num % 3 === 0 && num % 5 === 0) {
-    return "FizzBuzz"
-} else if (num % 3 === 0) {
-    return "Fizz"
+  let num2 = []
+for (let i = 1; i <= num; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    num2.push("FizzBuzz")
+} else if (i % 3 === 0) {
+  num2.push("Fizz")
 } else if (i % 5 === 0) {
-    return "Buzz"
+    num2.push("Buzz")
 } else {
-    return i
-}
-}
+    num2.push(i)
 }
 
-console.log(multiples([i]))
+  }
+  return num2
+}
+
+console.log(multiples(90))
 //
 // ## Question 9
 //
@@ -262,23 +264,21 @@ console.log(multiples([i]))
 // Output: `[3, 2, 1]`
 
 console.log('=========answer#9===========')
-// let arr = [1, 2, 3];
-//
-// const reverse = (arr) => {
-// let reverseArr = [];
-// for (let num of arr) {
-// reverseArr.unshift(num)
-//
-// }
-// return reverseArr
-// }
-// console.log(reverse(arr))
-//  ÷
+let arr = [1, 2, 3];
 
-//   }
-// let reversed = arr.reverse(arr)
-//
-// console.log(reversed)
+const reverse = (arr) => {
+let reverseArr = [];
+for (let num of arr) {
+reverseArr.unshift(num)
+
+}
+return reverseArr
+}
+console.log(reverse(arr))
+
+
+
+
 //
 //
 // ## Question 10
@@ -293,34 +293,48 @@ console.log('=========answer#9===========')
 // Output: `2`
  console.log("========answer#10=========")
 
-//  let arr = [2,1,4,2,5,2,3,23,3,3,2,2,2,24,56,2,2,5,46,2]
-// function mostFrequentElement (arr) {
-//   if (arr === 0) {
-//   myArr = []
-//   }
-//  // let myArr = []
-//  let currNum = 0
-//  let mostNum = 0
-//  let max = 0
-//
-//  for (let i = 0; i < arr.length; i++) {
-//   currNum_1 = 2
-//   let j = 0
-//   for (let j = i + 1; j < arr.length; j++) {
-//     if (arr[i] === arr[j]) {
-//       currNum_1++
-//     }
-//   }
-//   if (currNum_1 > max) {
-//     max = currNum_1
-//     mostNum = arr[i]
-//   }
-//   }
-//   return mostNum
-// }
-// let Main;
-// Main.mostFrequentElement = mostFrequentElement(arr);
-// console.log(Main.mostFrequentElement(arr))
+ let arr = [2,1,4,2,5,2,3,23,3,3,2,2,2,24,56,2,2,5,46,2]
+function mostFrequentElement (arr) {
+  return
+}
+
+  let myArr = {
+}
+
+
+ for (let i = 0; i < arr.length; i++) {
+  let currNum = arr[i]
+  if ( currNum !== ",") {
+  }
+   if (myArr[currNum]=== undefined) {
+     myArr[currNum] = 1;
+   } else {
+     myArr[currNum]++
+   }
+
+   let mostNum;
+   let mostNumCount = 0
+
+   for (let num in myArr) {
+     if (myArr[num] > mostNumCount) {
+       mostNum = num
+       mostNumCount = myArr[num]
+
+     }
+
+return mostNum
+
+   // console.log(mostNum)
+   // console.log(mostNumCount)
+ }
+   console.log(mostFrequentElement([arr]))
+
+   // DOESN'T RUN
+
+
+
+
+
 //
 //
 // ## Question 11
@@ -333,20 +347,24 @@ console.log('=========answer#9===========')
 //
 // Output: `88`
 
-console.log("========answer#11===========")
+// console.log("========answer#11===========")
+//
+ let arr = [1,2,5,64,23,22,91,3];
 
-// let arr = [1,2,5,64,23,22,91,3];
-// let sum = 0
-// const evenSum = (arr) => {
-// for (let i = 0; i < arr.length; i++) {
-//
-//   if (i % 2 === 0){
-//   return sum += i
-//   }
-// }
-// }
-//
-// console.log(evenSum(sum))
+ const evenSum = (arr) => {
+
+       let sum = 0
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] % 2 === 0){
+        sum += arr[i]
+  }
+}
+    return sum
+ }
+ console.log(evenSum(arr))
+
+
+
 //
 //
 // ## Question 12
@@ -360,18 +378,18 @@ console.log("========answer#11===========")
 //
 // Output: `{"uno": 1, "cinco": 5}
 
-console.log('========answer#12==========')
+// console.log('========answer#12==========')
 
-// let obj = {1: "uno", 5: "cinco"}
-// const flipObj = (obj) => {
-//   let flip = {}
-//   for (let ley in obj) {
-//     flip[obj[key]] = key;
-//   }
-//   return flip
-//
-// }
-// console.log(flipObj(obj))
+let obj = {1: "uno", 5: "cinco"}
+const flipObj = (obj) => {
+  let flip = {}
+  for (let key in obj) {
+    flip[obj[key]] = key;
+  }
+  return flip
+
+}
+console.log(flipObj(obj))
 //
 //
 // ## Question 13
@@ -383,3 +401,18 @@ console.log('========answer#12==========')
 // Input: `[1,4,6,9,10], 5`
 //
 // Output: `false`
+
+console.log("========answer#13========")
+
+let theArr = [1, 4, 6, 9, 10,]
+const valueArr = (arr, val) => {
+  for (let inside of theArr) {
+    if (val !== inside) {
+    return false
+  } else {
+      return true
+  }
+  }
+
+}
+console.log(valueArr(theArr, 6))
