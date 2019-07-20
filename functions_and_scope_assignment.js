@@ -162,21 +162,31 @@
 // If the number is a multiple of 5, log `"Buzz"` instead of the number
 // If the number is a multiple of 3 AND 5, log `"FizzBuzz"` instead of the number
 // Your function should take in one parameter: x (the number to count up to)
-//
-const numFizzBuzz = (num) => {
-  for (let i = 1; i <= num; i++){
-    if (i % 3 === 0 && i % 5 === 0){
-      console.log('FizzBuzz');
-    } else if (i % 3 === 0){
-      console.log('Fizz');
-    } else if (i % 5 === 0){
-      console.log('Buzz');
-    } else {
-      console.log(i);
-    }
-  }
-};
-
+// // ****need help*****
+// function multiple (num){
+//   for ( let num =1; num <= 50; i++){
+//     if ( num % 3 ===0 && num % 5 ===o){
+// return"FizzBuzz"
+// } else if (num % 3 ===0){
+//   return "Fizz
+//   for ( let num2 =2; num2 <= 50; i++){
+//     if( i % 3 === 0 && i % 5 === 0){
+//       num2.push("FizzBuzz")
+//     }else if ( i % 3 ===0){
+//       num2.push("Fizz")
+//     }else if ( i %5 ===0){
+//       return " Buzz"
+//       num2.push("Buzz")
+//     } else{
+//       return i
+//     }
+//     num2.push(i)
+//   }
+// }
+// return num2
+//   }
+// }
+//   console.log(multiple(50))
 //===============================================================================
 // ## Question 9
 //
@@ -208,7 +218,6 @@ const numFizzBuzz = (num) => {
 //
 // Output: `2`
 //let arr = [2,1,4,2,5,2,3,23,3,3,2,2,2,24,56,2,2,5,46,2];
-
 //
 //====================================================================
 // ## Question 11
