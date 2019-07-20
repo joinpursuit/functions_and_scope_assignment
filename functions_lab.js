@@ -221,13 +221,27 @@ console.log(reverse(array))
 //
 // Output: `2`
 //
-// function frequentOcc(param) {
-//   for (let i = 0; i < param.length; i++) {
-//     let num = 0
-//     if (param[i])
-//   }
-// }
-//
+
+let numberArr = [7, 13, 4, 7, 1, 7, 4, 9, 7, 0, 7];
+
+function frequentOcc(param) {
+  let a = 1;
+  let b = 0;
+  let occ;
+  for (let i = 0; i < param.length; i++)  {
+    for (let j = i; j < param.length; j++) {
+      if (param[i] === param[j]) {
+        b++
+      } if (a < b) {
+        a = b;
+        occ = param[i]
+      }
+    }
+  } b = 0
+  return occ
+}
+
+console.log(frequentOcc(numberArr))
 // ## Question 11
 //
 // Write a function that sums all the even numbers in an array.
@@ -263,21 +277,25 @@ console.log(evenSum(evenArr));
 // Output: `{"uno": 1, "cinco": 5}`
 //
 
-// let obj = {
-//   1: "un",
-//   2: "deux",
-//   3: "trois",
-//   4: "quatre",
-//   5: "cinq",
-// }
-//
-// function objReverse (param) {
-//   for (let key in param) {
-//     console.log(key);
-//   }
-// }
-// // console.log(Object.keys(obj))
-// objReverse(obj);
+let obj = {
+  1: "un",
+  2: "deux",
+  3: "trois",
+  4: "quatre",
+  5: "cinq",
+}
+
+
+function objReverse (param) {
+  for (let key in param) {
+    key = param[key];
+    param[key] = key
+  }
+  return param
+}
+
+console.log(objReverse(obj));
+
 
 
 // ## Question 13
