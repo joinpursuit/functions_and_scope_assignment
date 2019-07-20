@@ -294,6 +294,7 @@ const sumOfEven = (arr) => {
   for(let i = 0; i < arr.length; i++) {
     if (arr[i] % 2 === 0) {
     sum2 += arr[i]
+    console.log(sum2);
     }
   }
   return sum2
@@ -312,7 +313,30 @@ console.log("_____#12_____")
 // Write a function that flips an object.  All of the keys are now values and all of the values are now keys.
 //
 
+let spanishCountingObj = {
+  1: "Uno",
+  5: "Cinco"
+}
+const objKeyValSwap = (obj) => {
+  let swapCopy = {}
+  let copyValues = []
+  let copyKeys = []
+  for (let values in obj) {
+    copyValues.push(obj[values])
+  }
+  for (let keys in obj) {
+    copyKeys.push(keys)
+  }
+  for (let i = 0; i < copyValues.length; i++) {
+     if (copyValues !== i) {
+       swapCopy = copyValues[i]
+     }
+  }
+  //for (let i = 0; i )
+ return swapCopy
+}
 
+console.log(objKeyValSwap(spanishCountingObj))
 
 // Example:
 //
@@ -326,7 +350,18 @@ console.log("_____#13_____")
 //
 // Write a function that determines if a value is inside of array.
 //
+let exeArr = [2,1,4,7,6,9]
+const arrValCheck = (arr, num) => {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === num) {
+      return true
+    } else {
+      return false
+    }
+  }
+}
 
+console.log(arrValCheck(exeArr, 2))
 
 // Example:
 //
