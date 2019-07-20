@@ -220,10 +220,24 @@ function reverse(array) {
 }
   return arr;
 }
+let arr1 = [1,2,3]
+console.log(reverse(arr1));
+//
+
+or//
+
+function reverse(array) {
+  let arr2= arr.reverse();
+  return arr2;
+}
 let arr = [1,2,3]
 console.log(reverse(arr));
-//
-//
+
+
+
+
+
+
 // ## Question 10
 //
 // Write a function that prints out the most frequently occurring element in an array.
@@ -273,6 +287,15 @@ console.log(sumOfNum([1,5,2,4,11,12,99,100]))
 //
 // Output: `{"uno": 1, "cinco": 5}`
 //
+let input = {1: "uno", 5: "cinco"}
+let input2 = {};
+function flip(input3){
+  for(let key in input){
+    input2[input3[key]] = key;
+  }
+  return input2;
+}
+console.log(flip(input))
 
  // ## Question 13
 //
@@ -284,7 +307,7 @@ console.log(sumOfNum([1,5,2,4,11,12,99,100]))
 //
 // Output: `false`
 //
-//
+
 function value(arr1,num1){
   for(let i = 0; i < arr1.length; i++){
   if(arr1.includes(num1)){
