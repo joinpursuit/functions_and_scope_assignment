@@ -186,8 +186,15 @@ console.log(reverse(happyMeal));
 //
 // Output: `2`
 //
-//
-//
+// let frequentArray = [2,1,4,2,5,2,3,23,3,3,2,2,2,24,56,2,2,5,46,2];
+// function countElements(arr) {
+//   let counter = 0;
+//   for (let i = 0; i < arr.length; i++){
+//     arr.sort();
+//     }
+//   }
+// }
+// console.log(countElements(frequentArray));
 // ## Question 11
 //
 // Write a function that sums all the even numbers in an array.
@@ -219,3 +226,15 @@ console.log(reverse(happyMeal));
 // Input: `[1,4,6,9,10], 5`
 //
 // Output: `false`
+// let insideArray = [1,4,6,9,10];
+// let myGuess = 10;
+// function isThisThere(arr, num) {
+//   for (let i = 0;  i < arr.length; i++) {
+//     if (arr[i] === num) {
+//       return true;
+//         } else {
+//       return false;
+//       }
+//     }
+//   }
+// console.log(isThisThere(insideArray, myGuess));
