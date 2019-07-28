@@ -2,9 +2,11 @@
 //
 
 
-// function declarations
 
+// global function declarations
 const spacer = () => {console.log("\n")}
+
+
 
 // f.1
 const whosLarger = (num1, num2) => {
@@ -19,10 +21,10 @@ const whosLarger = (num1, num2) => {
 const getDogAge = (num1) => num1 * 7
 
 // f.3
-const arraySum = (arr) => {
-  let sum = arr[0];
-  for (let i = 1; i < arr.length; i++) {
-    sum += arr[i];
+const arraySum = (input_Arr) => {
+  let sum = input_Arr[0];
+  for (let i = 1; i < input_Arr.length; i++) {
+    sum += input_Arr[i];
   }
   return sum;
 }
@@ -50,26 +52,26 @@ const grader = (num) => {
 }
 
 // f.6
-const repeatLog = (str, num) => {
-  let blast = str;
-  for (let i = 1; i < num; i++) {
-    blast += str;
+const repeatLog = (buildStr, freq) => {
+  let outputBlast = buildStr;
+  for (let i = 1; i < freq; i++) {
+    outputBlast += buildStr;
   }
-  return blast;
+  return outputBlast;
 }
 
 // f.7
-const first = (num) => {
-  let newArray = [1];
-  for (let i = 1; i < num; i++) {
-    newArray.push(i + 1);
+const first = (max) => {
+  let outputArray = [1];
+  for (let i = 1; i < max; i++) {
+    outputArray.push(i + 1);
   }
-  return newArray;
+  return outputArray;
 }
 
 // f.8
-const bizzFuzzer = (num) => {
-  for (let i = 1; i <= num; i++) {
+const bizzFuzzer = (max) => {
+  for (let i = 1; i <= max; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
       console.log(`FizzBuzz`);
     } else if (!(i % 3)) {
@@ -83,67 +85,67 @@ const bizzFuzzer = (num) => {
 }
 
 // f.9
-const reverseIt = (arr) => {
-  let newArray = [];
-  for (let i = arr.length - 1; i >= 0; i--) {
-    newArray.push(arr[i]);
+const reverseIt = (input_Arr) => {
+  let outputArray = [];
+  for (let i = input_Arr.length - 1; i >= 0; i--) {
+    outputArray.push(input_Arr[i]);
   }
-  return newArray;
+  return outputArray;
 }
 
 // f.10
-const mostElemOfArr = (arr) => {
-  let newObj = {};
-  for (let i of arr) {
-    if (newObj[i] === undefined) {
-      newObj[i] = 1;
-      // console.log(newObj); // debug
+const getMostElemOfArr = (input_Arr) => {
+  let tallyObj = {};
+  for (let i of input_Arr) {
+    if (tallyObj[i] === undefined) {
+      tallyObj[i] = 1;
+      // console.log(tallyObj); // debug
     } else {
-      newObj[i] += 1;
-      // console.log(newObj); // debug
+      tallyObj[i] += 1;
+      // console.log(tallyObj); // debug
     }
   }
-  let topKey;
-  let topKeyCount = 0;
-  for (let key in newObj) {
-    if (newObj[key] > topKeyCount) {
-      topKey = key;
-      topKeyCount = newObj[key];
+  let mostElem;
+  let mostElemCount = 0;
+  for (let elem in tallyObj) {
+    if (tallyObj[elem] > mostElemCount) {
+      mostElem = elem;
+      mostElemCount = tallyObj[elem];
     }
   }
-  return topKey;
+  return mostElem;
 }
 
 // f.11
-const sumOfTheEvens = (arr) => {
+const sumOfTheEvens = (input_Arr) => {
   let sum = 0;
-  for (let i of arr) {
-    if (!Math.abs(i % 2)) {
-      sum += i;
+  for (let num of input_Arr) {
+    if (!Math.abs(num % 2)) {
+      sum += num;
     }
   }
   return sum;
 }
 
 // f.12
-const flipTheObject = (obj) => {
-  let newArray = {};
-  for (let key in obj) {
-    newArray[obj[key]] = key;
+const flipTheObject = (input_Obj) => {
+  let outputObject = {};
+  for (let key in input_Obj) {
+    outputObject[input_Obj[key]] = key;
   }
-  return newArray;
+  return outputObject;
 }
 
 // f.13
-const isElemPresent = (arr, num) => {
-  let present = false;
-  for (let i of arr) {
-    if (i === num) {
-      present = true;
+const isElemPresent = (input_Arr, findMeNum) => {
+  let presence = false;
+  for (let el of input_Arr) {
+    if (el === findMeNum) {
+      presence = true;
       break;
     }
   }
-  return present;
+  return presence;
 }
 
 
@@ -233,7 +235,7 @@ spacer();
 // 8
 console.log("8. Write a function that logs the numbers from 1 to x, except: mults of 3 log 'Fizz', mults of 5 log 'Buzz', mults of 3 & 5 log 'FizzBuzz'. Take in: x (the number to count up to).");
 let x = 25;
-console.log(`BIZZFUZZING: ${x}`);
+console.log(`BIZZFUZZING up to: ${x}`);
 
 bizzFuzzer(x);
 //
@@ -256,7 +258,7 @@ console.log("10. Write a function that prints out the most frequently occurring 
 let labInput10 = [2,1,4,2,5,2,3,23,0,0,0,0,0,0,0,0,0,0,3,3,2,2,2,24,56,2,2,5,46,2];
 console.log(labInput10);
 
-let result10 = mostElemOfArr(labInput10);
+let result10 = getMostElemOfArr(labInput10);
 console.log(`${result10} is the most recurring element.`);
 //
 spacer();
