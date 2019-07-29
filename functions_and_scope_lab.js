@@ -12,9 +12,8 @@ const spacer = () => {console.log("\n")}
 const whosLarger = (num1, num2) => {
   if (num1 > num2) {
     return num1;
-  } else {
-    return num2;
   }
+  return num2;
 }
 
 // f.2
@@ -22,11 +21,11 @@ const getDogAge = (num1) => num1 * 7
 
 // f.3
 const arraySum = (input_Arr) => {
-  let sum = input_Arr[0];
-  for (let i = 1; i < input_Arr.length; i++) {
-    sum += input_Arr[i];
+  let outputSum = 0;
+  for (let num of input_Arr) {
+    outputSum += num;
   }
-  return sum;
+  return outputSum;
 }
 
 // f.4
@@ -54,8 +53,9 @@ const grader = (num) => {
 // f.6
 const repeatLog = (buildStr, freq) => {
   let outputBlast = buildStr;
-  for (let i = 1; i < freq; i++) {
+  while (freq > 1) {
     outputBlast += buildStr;
+    freq--;
   }
   return outputBlast;
 }
@@ -63,8 +63,8 @@ const repeatLog = (buildStr, freq) => {
 // f.7
 const first = (max) => {
   let outputArray = [1];
-  for (let i = 1; i < max; i++) {
-    outputArray.push(i + 1);
+  for (let i = 2; i < max + 1; i++) {
+    outputArray.push(i);
   }
   return outputArray;
 }
@@ -96,21 +96,15 @@ const reverseIt = (input_Arr) => {
 // f.10
 const getMostElemOfArr = (input_Arr) => {
   let tallyObj = {};
-  for (let i of input_Arr) {
-    if (tallyObj[i] === undefined) {
-      tallyObj[i] = 1;
-      // console.log(tallyObj); // debug
-    } else {
-      tallyObj[i] += 1;
-      // console.log(tallyObj); // debug
-    }
-  }
   let mostElem;
   let mostElemCount = 0;
-  for (let elem in tallyObj) {
-    if (tallyObj[elem] > mostElemCount) {
-      mostElem = elem;
-      mostElemCount = tallyObj[elem];
+  for (let num of input_Arr) {
+    tallyObj[num] === undefined
+      ? tallyObj[num] = 1
+      : tallyObj[num] += 1;
+    if (tallyObj[num] > mostElemCount) {
+      mostElemCount = tallyObj[num];
+      mostElem = num;
     }
   }
   return mostElem;
@@ -138,14 +132,12 @@ const flipTheObject = (input_Obj) => {
 
 // f.13
 const isElemPresent = (input_Arr, findMeNum) => {
-  let presence = false;
   for (let el of input_Arr) {
     if (el === findMeNum) {
-      presence = true;
-      break;
+      return true;
     }
   }
-  return presence;
+  return false;
 }
 
 
