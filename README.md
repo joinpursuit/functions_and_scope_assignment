@@ -107,7 +107,7 @@ Output: `[3, 2, 1]`
 
 ## Question 10
 
-Write a function that prints out the most frequently occurring element in an array.
+Write a function that prints out the most frequently occurring element in an array. //use object
 
 Example:
 
@@ -130,7 +130,7 @@ Output: `88`
 
 ## Question 12
 
-Write a function that flips an object.  All of the keys are now values and all of the values are now keys.
+Write a function that flips an object.  All of the keys are now values and all of the values are now keys. ** use object.
 
 Example:
 
@@ -141,7 +141,7 @@ Output: `{"uno": 1, "cinco": 5}`
 
 ## Question 13
 
-Write a function that determines if a value is inside of array.
+Write a function that determines if a value is inside of array. ***
 
 Example:
 
