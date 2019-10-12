@@ -48,14 +48,15 @@ console.log(occurences("l"))
 let array1 = [1,2,3,4,5]
 
 function averageArr(array1){
-    let average = 0
-    let sum = 0
-    for(let i = 0; i < array1.length; i++){
+    let average = 0 // initailizing the average variable
+    let sum = 0 // initailizing the sum variable
+    for(let i = 0; i < array1.length; i++){ // looping through the array
         
-     sum += array1[i] 
+     sum = sum + array1[i] //adding sum plus array index and saving the value in sum
     } 
     average = sum / (array1.length)
     return average
 }
 console.log(averageArr(array1))
 
+//Question 6
