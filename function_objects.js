@@ -45,16 +45,16 @@
 
 // Write a function named smallestValueInArr that takes in an array of numbers and returns the smallest number
 
-let arr = [1, 2, 3, 0, 5, 6]
-function smallestValueInArr (array){
-    let smallest = array[0]
-    for(let i = 0; i <= array.length; i += 1){
-        if(array[i] < smallest){
-            smallest = array[i]
-        }
-    }return smallest
-}
-console.log(smallestValueInArr(arr))
+// let arr = [1, 2, 3, 0, 5, 6]
+// function smallestValueInArr (array){
+//     let smallest = array[0]
+//     for(let i = 0; i <= array.length; i += 1){
+//         if(array[i] < smallest){
+//             smallest = array[i]
+//         }
+//     }return smallest
+// }
+// console.log(smallestValueInArr(arr))
 
 // ```
 // Sample inputs and expected outputs:
@@ -77,6 +77,18 @@ console.log(smallestValueInArr(arr))
 // inputOne: " ", inputTwo: "Now with some spaces", expectedOutput: 3
 // inputOne: "E", inputTwo: "cApItAlS aRe DiFfErEnT", expectedOutput: 2
 // ```
+function occurences(letter, string){
+    let count = 0;
+    for (let i = 0; i < string.length; i++){
+        if (string[i] === letter){
+            count++;
+        }
+    }
+    return count;
+}
+console.log(occurences("l", "hello"));
+console.log(occurences(" ","Now with some spaces"));
+console.log(occurences("E","cApItAlS aRe DiFfErEnT"));
 
 // ## Question Five
 
@@ -90,7 +102,15 @@ console.log(smallestValueInArr(arr))
 // input: [-10,5,-15,20], expectedOutput: 0
 // input: [1.5, 2.25, 4.5, -1.5], expectedOutput: 1.6875
 // ```
-
+let arr2 = [ 40 , 22, 1, 2, 3 ];
+function average (array){
+    let sum = 0;
+    for(let i = 0; i < array.length; i++){
+        sum += array[i];
+    }
+    return sum / array.length;
+}
+console.log(average(arr2));
 
 // ## Question Six
 
