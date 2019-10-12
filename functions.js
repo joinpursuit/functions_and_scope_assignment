@@ -69,15 +69,36 @@
 // ## Question Six
 // Write a function named frequencyMap that takes a string as input and returns an object that maps each character its number of occurrences
 
+// function frequencyMap(stringName) {
+//     let characterMap = {}
+//     for(let i =0; i < stringName.length; i++) {
+//         if (characterMap[stringName[i]]) {
+//             characterMap[stringName[i]] ++
+//         }
+//         else {characterMap[stringName[i]] = 1}
+//     }
+// return characterMap
+// }
+// console.log(frequencyMap("hello"))
 
-function frequencyMap(stringName) {
-    let characterMap = {}
-    for(let i =0; i < stringName.length; i++) {
-        if (characterMap[stringName[i]]) {
-            characterMap[stringName[i]] ++
-        }
-        else {characterMap[stringName[i]] = 1}
-    }
-return characterMap
-}
-console.log(frequencyMap("hello"))
+// ## Question Seven
+// Write a function called fizzBuzz that logs the numbers from 1 to n as with the following replacements:
+
+// function fizzBuzz(n) {
+//     for (let i = 0; i < n; i++) {
+//         if (i % 3 === 0 && i % 5 === 0) {
+//             console.log("FizzBuzz");
+//             continue;
+//         } else if (i % 5 === 0) {
+//             console.log("Buzz");
+//             continue;
+//         } else if (i % 3 === 0) {
+//             console.log("Fizz");
+//             continue;
+//         } 
+//         console.log(i);
+//     }
+// }
+
+// console.log(fizzBuzz(27));
+
