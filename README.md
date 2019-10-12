@@ -95,6 +95,17 @@ inputOne: "E", inputTwo: "cApItAlS aRe DiFfErEnT", expectedOutput: 2
 
 Write a function named average that returns the average of an array of numbers
 
+let arr1 = [1,2,3,4,5]
+function average(arr){
+    sum=0
+    for (i=0; i < arr.length; i++){
+        sum +=arr[i]
+    } 
+    avg = sum / arr.length
+    return avg
+} 
+console.log(average(arr1))
+
 ```
 Sample inputs and expected outputs:
 
