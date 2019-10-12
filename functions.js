@@ -102,3 +102,24 @@
 
 // console.log(fizzBuzz(27));
 
+// ## Question Eight
+// Write a function named valueIsGreaterThanAverageOfArr that takes in an array of numbers and a number and returns whether the Double is greater than the averageute
+
+// inputOne = 1
+// inputTwo = [1.0,2,3,4,5]
+
+// function valueIsGreaterThanAverageOfArr(num, array) {
+//     let double = num * 2
+//     let sum = 0
+//     for (let i = 0; i < array.length; i++){
+//         sum += array[i]
+//     }
+//     let avg = sum / array.length
+//     if (double > avg) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// console.log(valueIsGreaterThanAverageOfArr(inputOne, inputTwo))
