@@ -29,3 +29,18 @@ function smallestValueInArr(array){
 console.log(smallestValueInArr(array))
 
 //Question 4
+let myString = "Hello"
+function occurences(string){
+    for(let i = 0; i < myString.length; i++){
+        if(string = myString[i]){
+            let count = 0
+            count ++
+        } else {
+            count = 0
+            return count
+        }
+    }
+}
+console.log(occurences("l"))
+
+//Question 5
