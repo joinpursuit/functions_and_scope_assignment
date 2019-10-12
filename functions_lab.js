@@ -173,7 +173,23 @@ console.log(frequencyMap(string))
 // 26
 // Fizz
 // ```
+function fizzBuzz(num){
+for(let i = 0; i <= num; i+= 1){
+    if(num % 3 === 0 && num % 5 === 0){
+        "FIZZBUZZ"
+    } else if (num % 3 === 0){
+        num[i]++
+        return "Fizz"
+    } else if (num % 5 === 0){
+        return "Buzz"
+    } else {
+        num
+    }
+    
+} 
+}
 
+console.log(fizzBuzz(15))
 // ## Question Eight
 
 // Write a function named valueIsGreaterThanAverageOfArr that takes in an array of numbers and a number and returns whether the Double is greater than the average
