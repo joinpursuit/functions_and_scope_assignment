@@ -53,6 +53,19 @@ console.log(smallest(3, 5))
 // input: [-4,-59,-348,-34,-4], expectedOutput: -348
 // ```
 
+let arr1 = [5, 7, 9, 3, 4]
+
+function smallestValueInArr(arr) {
+    for(let i = 0; i < arr.length; i++){
+        let smallestArr = arr[0]
+        if(arr[i] < smallestArr){
+            smallestArr = arr[i]
+            return smallestArr
+        }
+    }
+}
+
+console.log(smallestValueInArr(arr1))
 // ## Question Four
 
 // Write a function named occurrences that counts how many characters in a string match a specific character.
