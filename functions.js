@@ -35,3 +35,20 @@
 //     return smallestNumber;
 // }
 // console.log(smallestValueInArr(arr4));
+
+//problem 4
+
+function occurences(letter, str) {
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === letter) {
+            count +=1
+        }  
+    } 
+    return letter + ":" + count  
+}
+// console.log(occurences("l", "hello"));
+// console.log(occurences("r", "hello world!"));
+// console.log(occurences(" ", "Now with some spaces"));
+// console.log(occurences("E", "cApItAlS aRe DiFfErEnT"));
+
