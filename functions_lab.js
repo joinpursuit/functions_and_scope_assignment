@@ -100,8 +100,15 @@ console.log(occurrences('e', 'Soupieee'))
 // input: [-10,5,-15,20], expectedOutput: 0
 // input: [1.5, 2.25, 4.5, -1.5], expectedOutput: 1.6875
 // ```
-
-
+function average(arr) {
+    let median = 0
+    for(let i = 0; i < arr.length; i++){
+        median += arr[i]
+        avg = median / arr.length
+    }
+    return avg
+}
+console.log(average([2, 4, 6]))
 // ## Question Six
 
 // Write a function named frequencyMap that takes a string as input and returns an object that maps each character its number of occurrences
