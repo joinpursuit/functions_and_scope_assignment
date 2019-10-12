@@ -4,6 +4,11 @@
 
 Write a function named double that takes in a number and returns that number times two
 
+function double(num){
+    return num * 2
+}
+
+
 
 ```
 Sample inputs and expected outputs:
