@@ -22,17 +22,33 @@
 // ## Question Three
 // Write a function named smallestValueInArr that takes in an array of numbers and returns the smallest number
 
-arr1 = [1.0,2,3,4,5,5]
-arr2 = [6,5,4,3,2,1]
-arr3 = [-4,-59,-348,-34,-4]
+// arr1 = [1.0,2,3,4,5,5]
+// arr2 = [6,5,4,3,2,1]
+// arr3 = [-4,-59,-348,-34,-4]
 
-function smallestValueInArr(arr) {
-    let smallestNum = arr[0];
-    for (let i = 0; i < arr.length; i++) {
-        if (smallestNum > arr[i]) {
-            smallestNum = arr[i];
+// function smallestValueInArr(arr) {
+//     let smallestNum = arr[0];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (smallestNum > arr[i]) {
+//             smallestNum = arr[i];
+//         }
+//     }
+//     return smallestNum;
+// }
+// console.log(smallestValueInArr(arr3));
+
+// ## Question Four
+// Write a function named occurrences that counts how many characters in a string match a specific character.
+
+
+
+function occurrences(charName, stringName)  {
+    let count = 0
+    for (let i = 0; i < stringName.length; i++) {
+        if (charName === stringName[i]) {
+            count ++;
         }
     }
-    return smallestNum;
+    return count 
 }
-console.log(smallestValueInArr(arr3));
+console.log(occurrences("r", "hello world"))
