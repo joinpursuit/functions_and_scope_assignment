@@ -49,9 +49,12 @@ console.log(average([80, 80, 90, 65]))
 
 function frequencyMap(string) {
     let count = 0 
-    for(let i = 0; i > string.length; i++ ){
-        if(string[i] += count)
-        count ++ 
+    let letter = string[0]
+    for(let i = 0; i < string.length; i++ ){
+        if(string[i] === letter){
+
+        }
+        count ++;
     } 
     return string[i] + count
 }
@@ -65,4 +68,16 @@ console.log(frequencyMap("Pursuit in the house"))
 // console.table(authorScores);
 
 
+// function fizzBuzz(num) {
+//     for(let i = 0; i < num.length; i++){
+//         if(num % 3 === 0 && num % 5 === 0) {
+//             return "fizzbuzz"
+//         } else if( num % 3 === 0){
+//             return "fizz"
+//         } else if(num % 5 === 0) {
+//             return "buzz"
+//         }
+//     }
+// }
+// console.log(fizzBuzz(num[i]))
 
