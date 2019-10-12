@@ -43,4 +43,19 @@ function occurences(string){
 }
 console.log(occurences("l"))
 
+
 //Question 5
+let array1 = [1,2,3,4,5]
+
+function averageArr(array1){
+    let average = 0
+    let sum = 0
+    for(let i = 0; i < array1.length; i++){
+        
+     sum += array1[i] 
+    } 
+    average = sum / (array1.length)
+    return average
+}
+console.log(averageArr(array1))
+
