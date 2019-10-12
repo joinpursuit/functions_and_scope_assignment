@@ -5,6 +5,11 @@
 Write a function named double that takes in a number and returns that number times two
 
 
+function double(number) {
+    return number * 2;
+}
+console.log(double(5))
+
 ```
 Sample inputs and expected outputs:
 
@@ -19,6 +24,14 @@ input: 99, expectedOutput: 198
 Write a function named smallest that takes in two numbers and returns the smaller number
 
 ```
+function smallest(num1, num2) {
+    if(num1 < num2){
+        return num1
+    } else {
+        return num2
+    }
+}
+console.log(smallest(5, 7))
 Sample inputs and expected outputs:
 
 inputOne: 8, inputTwo: 3, expectedOutput: 3.0
@@ -31,7 +44,15 @@ inputOne: 2.3, inputTwo: 2.03, expectedOutput: 2.03
 
 Write a function named smallestValueInArr that takes in an array of numbers and returns the smallest number
 
-
+function smallestValueInArr(arr) {
+    let number = arr[0]
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i] < number) {
+            number = arr[i]
+        }
+    } return number
+ }
+console.log(smallestValueInArr([5, 7, 10, 10000]));
 ```
 Sample inputs and expected outputs:
 
@@ -53,6 +74,20 @@ inputOne: "r", inputTwo: "hello world!", expectedOutput: 1
 inputOne: " ", inputTwo: "Now with some spaces", expectedOutput: 3
 inputOne: "E", inputTwo: "cApItAlS aRe DiFfErEnT", expectedOutput: 2
 ```
+
+function occurences(char, word) {
+    let str = " "
+    let count = 0
+    for(i = 0 ; i <= word.length; i++){
+        if(word[i] === char)
+        count ++;   
+        
+    } 
+    return count
+} 
+console.log(occurences("d", "Hello Worlddddddd"))
+
+function average(arr)
 
 ## Question Five
 
