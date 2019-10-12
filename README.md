@@ -24,6 +24,17 @@ input: 99, expectedOutput: 198
 Write a function named smallest that takes in two numbers and returns the smaller number
 
 ```
+let x = 1
+let y = 2
+
+function smallest(num1, num2){
+    if (num1<num2){
+        return num1
+    } else
+    return num2
+}
+console.log(smallest(1,2))
+
 Sample inputs and expected outputs:
 
 inputOne: 8, inputTwo: 3, expectedOutput: 3.0
@@ -36,7 +47,17 @@ inputOne: 2.3, inputTwo: 2.03, expectedOutput: 2.03
 
 Write a function named smallestValueInArr that takes in an array of numbers and returns the smallest number
 
+let arr1 = [1.0,2,3,4,5,5]
 
+function smallestValueInArr(arr){
+    let smallest = arr[0]
+    for (let i=0;i<arr.length;i++){
+        if (smallest > arr[i])
+        smallest = arr[i]
+    }
+    return smallest
+} 
+console.log(smallestValueInArr(arr1))
 ```
 Sample inputs and expected outputs:
 
