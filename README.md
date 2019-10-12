@@ -71,6 +71,17 @@ input: [-4,-59,-348,-34,-4], expectedOutput: -348
 
 Write a function named occurrences that counts how many characters in a string match a specific character.
 
+function occurrences(inputOne,inputTwo){
+    freq=0
+    for (let i=0;i < inputTwo.length; i++){
+        if (inputOne === inputTwo[i]){
+        freq++
+        }
+    }
+    return freq
+}
+
+
 ```
 Sample inputs and expected outputs:
 
