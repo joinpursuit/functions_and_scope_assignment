@@ -177,7 +177,7 @@ Write a function named valueIsGreaterThanAverageOfArr that takes in an array of 
 Sample inputs and expected outputs
 
 inputOne: 4.0, inputTwo: [1.0,2,3,4,5], expectedOutput: true
-inputOne: 2, inputTwo: [1,2,3,4,5], expectedOutput: false
+inputOne: 2, inputTwo: [1,2,3,4,5], expectedOutput: true
 inputOne: 3, inputTwo: [1,2,3,4,5], expectedOutput: false
 inputOne: 100.8, inputTwo: [1,42,1,541,42,5], expectedOutput: false
 inputOne: 105.4, inputTwo: [1,42,1,541,42,5], expectedOutput: true
