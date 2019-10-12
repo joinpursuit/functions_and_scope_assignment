@@ -3,6 +3,10 @@
 ## Question One
 
 Write a function named double that takes in a number and returns that number times two
+  
+  function doubleNumber (number) {
+   return number * number
+ }
 
 
 ```
