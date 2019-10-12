@@ -40,15 +40,28 @@
 // ## Question Four
 // Write a function named occurrences that counts how many characters in a string match a specific character.
 
+// function occurrences(charName, stringName)  {
+//     let count = 0
+//     for (let i = 0; i < stringName.length; i++) {
+//         if (charName === stringName[i]) {
+//             count ++;
+//         }
+//     }
+//     return count 
+// }
+// console.log(occurrences("r", "hello world"))
 
+// ## Question Five
+// Write a function named average that returns the average of an array of numbers
 
-function occurrences(charName, stringName)  {
-    let count = 0
-    for (let i = 0; i < stringName.length; i++) {
-        if (charName === stringName[i]) {
-            count ++;
-        }
-    }
-    return count 
-}
-console.log(occurrences("r", "hello world"))
+// arr1 = [1,2,3,4,5]
+// arr2 = [1,42,1,541,42,6]
+
+// function average(arrNum) {
+//     let sum = 0;
+//     for (let i = 0; i < arrNum.length; i++) {
+//         sum += arrNum[i];
+//     }
+//     return sum / arrNum.length;
+// }
+// console.log(average(arr2))
