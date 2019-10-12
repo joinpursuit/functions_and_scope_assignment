@@ -103,6 +103,16 @@ input: [1.5, 2.25, 4.5, -1.5], expectedOutput: 1.6875
 ```
 
 
+function average(arr) {
+    let sum = 0
+    for(let i = 0; i < arr.length; i++){
+        sum += arr[i]
+    }
+        return sum/arr.length
+}
+console.log(average([80, 80, 90, 65]))
+
+
 ## Question Six
 
 Write a function named frequencyMap that takes a string as input and returns an object that maps each character its number of occurrences

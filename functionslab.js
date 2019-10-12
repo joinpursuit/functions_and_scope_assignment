@@ -37,4 +37,32 @@ function occurences(char, word) {
 } 
 console.log(occurences("d", "Hello Worlddddddd"))
 
-function average(arr)
+function average(arr) {
+    let sum = 0
+    for(let i = 0; i < arr.length; i++){
+        sum += arr[i]
+    }
+        return sum/arr.length
+}
+console.log(average([80, 80, 90, 65]))
+
+
+function frequencyMap(string) {
+    let count = 0 
+    for(let i = 0; i > string.length; i++ ){
+        if(string[i] += count)
+        count ++ 
+    } 
+    return string[i] + count
+}
+
+console.log(frequencyMap("Pursuit in the house"))
+
+// let  = {
+//     " " : ,
+
+
+// console.table(authorScores);
+
+
+
