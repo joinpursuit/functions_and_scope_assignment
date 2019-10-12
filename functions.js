@@ -38,17 +38,30 @@
 
 //problem 4
 
-function occurences(letter, str) {
-    let count = 0;
-    for (let i = 0; i < str.length; i++) {
-        if (str[i] === letter) {
-            count +=1
-        }  
-    } 
-    return letter + ":" + count  
-}
+// function occurences(letter, str) {
+//     let count = 0;
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] === letter) {
+//             count +=1
+//         }  
+//     } 
+//     return letter + ":" + count  
+// }
 // console.log(occurences("l", "hello"));
 // console.log(occurences("r", "hello world!"));
 // console.log(occurences(" ", "Now with some spaces"));
 // console.log(occurences("E", "cApItAlS aRe DiFfErEnT"));
+
+// Problem 5
+
+let arr =[1, 2, 3, 4, 5] 
+// let average;
+function sum(arr) {
+    let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+    return sum/ arr.length
+}
+console.log(sum(arr))
 
