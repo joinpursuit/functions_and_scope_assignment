@@ -56,6 +56,29 @@
 // console.log(average(arr))
 
 //6
-let word = "Hello"
-console.log(Object.keys("Hello"))
 
+// let word = "Hello"
+// let obj = {}
+// for (i = 0; i < word.length; i++){
+//     obj[word[i]] = 0
+// }
+
+
+// for (key in obj){
+//     for (i = 0; i< word.length; i++ )
+//     if (key === word[i]){
+//      obj[word[i]] += 1
+// }
+// }
+// console.log(obj)   
+let string = "hello"
+let object = {}
+function frequencyMap(string, object){
+    for (i = 0; i < string.length; i++)
+    object[string[i]] = 0
+    for (key in object)
+    for (i = 0; i < string.length; i++)
+        if (key === string[i])
+        object[string[i]] += 1
+}
+console.log(frequencyMap(string))
