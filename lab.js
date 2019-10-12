@@ -105,9 +105,24 @@ function fizzBuzz(num1, num2) {
             console.log("Fizz")
         } else if (i % 5 === 0) {
             console.log("Buzz")
-        } else {
+        } 
+        else {
             console.log(i)
         }
     }
 }
-console.log(fizzBuzz(1,27))
+fizzBuzz(1,27)
+
+console.log("Problem 8")
+let input2 = [1,2,3,4,5];
+function valueIsGreaterThanAverageOfArr(input1, input2){
+    let sum = 0;
+    for (i = 0; i<input2.length; i++){
+        sum += input2[i]
+    };
+    let avg = sum/input2.length;
+    let double = input1 * 2; 
+    console.log(double > avg ? "true" : "false");
+}
+
+valueIsGreaterThanAverageOfArr(1,input2)
