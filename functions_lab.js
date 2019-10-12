@@ -13,10 +13,10 @@
 // input: -2, expectedOutput: -4
 // input: 99, expectedOutput: 198
 // ```
-function double(num) {
-    return num * 2
-}
-console.log(double(5))
+// function double(num) {
+//     return num * 2
+// }
+// console.log(double(5))
 // ## Question Two
 
 // Write a function named smallest that takes in two numbers and returns the smaller number
@@ -29,16 +29,16 @@ console.log(double(5))
 // inputOne: -5, inputTwo: -3, expectedOutput: -5
 // inputOne: 2.3, inputTwo: 2.03, expectedOutput: 2.03
 // ```
-function smallest(num1, num2) {
-    if(num1 > num2) {
-        return num2
-    } else if(num1 < num2) {
-        return num1
-    } else {
-        return "numbers are equal"
-    }
-}
-console.log(smallest(3, 5))
+// function smallest(num1, num2) {
+//     if(num1 > num2) {
+//         return num2
+//     } else if(num1 < num2) {
+//         return num1
+//     } else {
+//         return "numbers are equal"
+//     }
+// }
+// console.log(smallest(3, 5))
 // ## Question Three
 
 // Write a function named smallestValueInArr that takes in an array of numbers and returns the smallest number
@@ -53,19 +53,19 @@ console.log(smallest(3, 5))
 // input: [-4,-59,-348,-34,-4], expectedOutput: -348
 // ```
 
-let arr1 = [5, 7, 9, 3, 4]
+// let arr1 = [5, 7, 9, 3, 4]
 
-function smallestValueInArr(arr) {
-    for(let i = 0; i < arr.length; i++){
-        let smallestArr = arr[0]
-        if(arr[i] < smallestArr){
-            smallestArr = arr[i]
-            return smallestArr
-        }
-    }
-}
+// function smallestValueInArr(arr) {
+//     for(let i = 0; i < arr.length; i++){
+//         let smallestArr = arr[0]
+//         if(arr[i] < smallestArr){
+//             smallestArr = arr[i]
+//             return smallestArr
+//         }
+//     }
+// }
 
-console.log(smallestValueInArr(arr1))
+// console.log(smallestValueInArr(arr1))
 // ## Question Four
 
 // Write a function named occurrences that counts how many characters in a string match a specific character.
@@ -78,15 +78,15 @@ console.log(smallestValueInArr(arr1))
 // inputOne: " ", inputTwo: "Now with some spaces", expectedOutput: 3
 // inputOne: "E", inputTwo: "cApItAlS aRe DiFfErEnT", expectedOutput: 2
 // ```
-function occurrences(inputOne, inputTwo){
-    let count = 0
-    for(let i = 0; i < inputTwo.length; i++){
-        if(inputTwo[i] === inputOne)
-        count ++
-    }
-    return count
-}
-console.log(occurrences('e', 'Soupieee'))
+// function occurrences(inputOne, inputTwo){
+//     let count = 0
+//     for(let i = 0; i < inputTwo.length; i++){
+//         if(inputTwo[i] === inputOne)
+//         count ++
+//     }
+//     return count
+// }
+// console.log(occurrences('e', 'Soupieee'))
 
 // ## Question Five
 
@@ -100,15 +100,15 @@ console.log(occurrences('e', 'Soupieee'))
 // input: [-10,5,-15,20], expectedOutput: 0
 // input: [1.5, 2.25, 4.5, -1.5], expectedOutput: 1.6875
 // ```
-function average(arr) {
-    let median = 0
-    for(let i = 0; i < arr.length; i++){
-        median += arr[i]
-        avg = median / arr.length
-    }
-    return avg
-}
-console.log(average([2, 4, 6]))
+// function average(arr) {
+//     let median = 0
+//     for(let i = 0; i < arr.length; i++){
+//         median += arr[i]
+//         avg = median / arr.length
+//     }
+//     return avg
+// }
+// console.log(average([2, 4, 6]))
 // ## Question Six
 
 // Write a function named frequencyMap that takes a string as input and returns an object that maps each character its number of occurrences
@@ -121,7 +121,19 @@ console.log(average([2, 4, 6]))
 // input: "aaaaaAAA", expectedOutput: {"a": 5, "A":3}
 // input: "More words", expectedOutput: {"M": 1, "o": 2, "r": 2, "e": 1, " ": 1, "w": 1, "d": 1, "s": 1}
 // ```
+let string = "how now brown cow"
+let obj = {}
+function frequencyMap(string) {
+    for(let i = 0; i < string.length; i++) {
+        if(obj[string[i]]) {
+            obj[string[i]] += 1
+            } else {
+                obj[string[i]] = 1
+            }
+        } return obj
+        }
 
+console.log(frequencyMap(string))
 // ## Question Seven
 
 // Write a function called fizzBuzz that logs the numbers from 1 to n as with the following replacements:
