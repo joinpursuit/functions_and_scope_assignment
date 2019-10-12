@@ -78,6 +78,15 @@ console.log(smallestValueInArr(arr1))
 // inputOne: " ", inputTwo: "Now with some spaces", expectedOutput: 3
 // inputOne: "E", inputTwo: "cApItAlS aRe DiFfErEnT", expectedOutput: 2
 // ```
+function occurrences(inputOne, inputTwo){
+    let count = 0
+    for(let i = 0; i < inputTwo.length; i++){
+        if(inputTwo[i] === inputOne)
+        count ++
+    }
+    return count
+}
+console.log(occurrences('e', 'Soupieee'))
 
 // ## Question Five
 
