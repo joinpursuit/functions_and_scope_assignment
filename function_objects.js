@@ -116,6 +116,21 @@ console.log(average(arr2));
 
 // Write a function named frequencyMap that takes a string as input and returns an object that maps each character its number of occurrences
 
+
+function frequencyMap(string){
+    let obj = { }
+    for(let i = 0; i < string.length; i++){
+        if (!obj.hasOwnProperty(string[i])){
+            obj[string[i]] = 1;
+        } else {
+            obj[string[i]]++;
+        }
+    }
+    return obj;
+}
+console.log(frequencyMap("supercalifragilisticexpialidocious"))
+
+
 // ```
 // Sample inputs and expected outputs:
 
@@ -132,6 +147,20 @@ console.log(average(arr2));
 // - If the number if a multiple of 3, replace it with "Fizz"
 // - If the number is a multiple of 5, replace it with "Buzz"
 // - If the number is a multiple of 3 AND 5, replace it with "FizzBuzz"
+function fizzBuzz(n){
+    for(let i = 1; i <= n; i += 1){
+        if(i % 3 === 0 && i % 5 === 0){
+            console.log('FizzBuzz');
+        }else if( i % 3 === 0){
+            console.log('Fizz');
+        }else if(i % 5 === 0){
+            console.log('Buzz');
+        }else{
+            console.log(i)
+        }
+    }
+}
+fizzBuzz(30);
 
 // ```
 // input: 27
@@ -168,6 +197,7 @@ console.log(average(arr2));
 // ## Question Eight
 
 // Write a function named valueIsGreaterThanAverageOfArr that takes in an array of numbers and a number and returns whether the Double is greater than the average
+
 
 // ```
 // Sample inputs and expected outputs
