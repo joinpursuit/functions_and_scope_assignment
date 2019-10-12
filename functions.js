@@ -65,3 +65,19 @@
 //     return sum / arrNum.length;
 // }
 // console.log(average(arr2))
+
+// ## Question Six
+// Write a function named frequencyMap that takes a string as input and returns an object that maps each character its number of occurrences
+
+
+function frequencyMap(stringName) {
+    let characterMap = {}
+    for(let i =0; i < stringName.length; i++) {
+        if (characterMap[stringName[i]]) {
+            characterMap[stringName[i]] ++
+        }
+        else {characterMap[stringName[i]] = 1}
+    }
+return characterMap
+}
+console.log(frequencyMap("hello"))
