@@ -120,25 +120,25 @@
 
 // PROBLEM 8
 
-let arr1 = [1.0,2,3,4,5]
-let arr2 = [1,2,3,4,5]
-let arr3 = [1,2,3,4,5]
-let arr4 = [1,42,1,541,42,5]
-let arr5 = [1,42,1,541,42,5]
-function valueIsGreaterThanAverageOfArr(num,arr) {
-     let sum = 0
-     for (i = 0; i < arr.length; i++){
+// let arr1 = [1.0,2,3,4,5]
+// let arr2 = [1,2,3,4,5]
+// let arr3 = [1,2,3,4,5]
+// let arr4 = [1,42,1,541,42,5]
+// let arr5 = [1,42,1,541,42,5]
+// function valueIsGreaterThanAverageOfArr(num,arr) {
+//      let sum = 0
+//      for (i = 0; i < arr.length; i++){
 
-         sum += arr[i];
-    }
-       let ave = sum / arr.length 
-       if ( num > ave) {
-           console.log("true")
-       } else {
-           console.log("false")
-       }
-    } 
-console.log(valueIsGreaterThanAverageOfArr(105.4,arr5))
+//          sum += arr[i];
+//     }
+//        let ave = sum / arr.length 
+//        if ( num > ave) {
+//            console.log("true")
+//        } else {
+//            console.log("false")
+//        }
+//     } 
+// console.log(valueIsGreaterThanAverageOfArr(105.4,arr5))
 
 
 
@@ -163,3 +163,64 @@ console.log(valueIsGreaterThanAverageOfArr(105.4,arr5))
 // return secSmallest
 // }
 // console.log(smallestt(arr4));
+
+
+
+
+
+
+//  ES6 SYNTAX 
+
+// PROBLEM 1
+
+// const double = (num) => {
+//     return num * 2;
+// }
+// console.log(double(99));
+
+
+// PROBLEM 2
+
+// const smallest = (num1, num2) => {
+//     if ( num1 < num2) {
+//         return num1 ;
+//     } else {
+//         return num2
+//     }
+// }
+// console.log(smallest(2.3, 2.03))
+
+
+// PROBLEM 3
+
+let arr1 = [1.0, 2, 3, 4, 5, 5] 
+let arr2 = [6, 5, 4, 3, 2, 1]
+let arr3 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+let arr4 = [-4, -59, -348, -34, -4]
+const smallestValueInArr = (arrNum) => {
+    let smallestNumber = arrNum[0] 
+    for( let i = 0; i < arrNum.length; i++){
+        if (arrNum[i]  < smallestNumber){
+            smallestNumber = arrNum[i];
+        }
+        // console.log(i)
+    } 
+    return smallestNumber;
+}
+console.log(smallestValueInArr(arr4));
+
+//problem 4
+
+// function occurences(letter, str) {
+//     let count = 0;
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] === letter) {
+//             count +=1
+//         }  
+//     } 
+//     return letter + ":" + count  
+// }
+// console.log(occurences("l", "hello"));
+// console.log(occurences("r", "hello world!"));
+// console.log(occurences(" ", "Now with some spaces"));
+// console.log(occurences("E", "cApItAlS aRe DiFfErEnT"));
