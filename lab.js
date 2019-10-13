@@ -126,3 +126,36 @@ function valueIsGreaterThanAverageOfArr(input1, input2){
 }
 
 valueIsGreaterThanAverageOfArr(1,input2)
+
+
+
+console.log("Problem 9")
+
+let input3 = [4, 8, 10, 13];
+function smallestInt(input3) {
+    let smallestNum1 = input[0];
+    for(let i = 0; i < input3.length; i++){
+        if ( smallestNum1 < input3[i]){
+        }
+        else {
+            smallestNum1 = input3[i]
+        }
+    }
+    return smallestNum1
+}
+// console.log(smallestInt(input3))
+function secondSmallestInt(input3) {
+    let smallestNum1 = input3[0];
+    let secondSmallestNum1= input3[0]
+    for (let i = 0; i < input3.length; i++) {
+        if (input3[i] < smallestNum1) {
+            secondSmallestNum1 = input3[i]
+        } else if (input3[i] > smallestNum1 && input3[i] < secondSmallestNum1) {
+            secondSmallestNum1 = smallestNum1
+            smallestNum1 = input3[i]
+            
+        }
+    }
+    return secondSmallestNum1
+}
+console.log(secondSmallestInt(input3))
