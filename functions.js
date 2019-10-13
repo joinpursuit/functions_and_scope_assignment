@@ -72,26 +72,25 @@
 
 // PROBLEM 6
 
-// let str1 = "hello"
-// let str2 = "aaaaaAAA"
-// let str3 = "More words"
+let str1 = "hello"
+let str2 = "aaaaaAAA"
+let str3 = "More words"
 
-// function frequencyMap(str) {
-//     let newObj = {}
-//    for(let i = 0; i < str.length; i++){
-//    if (str[i] !== i){
-//        newObj[str[i]] = 1
 
-//     } else {
-//     count = newObj[str[i]]++
-
-//    }  
-// //    newObj =   
-//    }
- 
-// // return newObj
-//  }
-// // console.log(frequencyMap(str1))
+function frequencyMap(str) {
+    let newObj = {};
+    for(let i = 0; i < str.length; i++){
+        if (newObj[str[i]]){
+            newObj[str[i]] +=1
+             } else {
+                newObj[str[i]] = 1
+                
+            }  
+        }
+        
+        return newObj
+    }
+console.log(frequencyMap(str1))
 
 
 
@@ -212,33 +211,85 @@
 
 //problem 4
 
-const occurences = (letter, str) => {
-    let count = 0;
-    for (let i = 0; i < str.length; i++) {
-        if (str[i] === letter) {
-            count +=1
-        }  
-    } 
-    return letter + ":" + count  
-}
-console.log(occurences("l", "hello"));
-console.log(occurences("r", "hello world!"));
-console.log(occurences(" ", "Now with some spaces"));
-console.log(occurences("E", "cApItAlS aRe DiFfErEnT"));
+// const occurences = (letter, str) => {
+//     let count = 0;
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] === letter) {
+//             count +=1
+//         }  
+//     } 
+//     return letter + ":" + count  
+// }
+// console.log(occurences("l", "hello"));
+// console.log(occurences("r", "hello world!"));
+// console.log(occurences(" ", "Now with some spaces"));
+// console.log(occurences("E", "cApItAlS aRe DiFfErEnT"));
 
 // Problem 5
 
-let arr  = [1, 2, 3, 4, 5] 
-let arr2 = [1,42,1,541,42,6]
-let arr3 = [-10,5,-15,20]
-let arr4 = [1.5, 2.25, 4.5, -1.5]
+// let arr  = [1, 2, 3, 4, 5] 
+// let arr2 = [1,42,1,541,42,6]
+// let arr3 = [-10,5,-15,20]
+// let arr4 = [1.5, 2.25, 4.5, -1.5]
 
-const sum= (arr)=> {
-    let sum1 = 0;
-    for (let i = 0; i < arr.length; i++) {
-    sum1 += arr[i];
-}
-    return sum1/ arr.length
-}
-console.log(sum(arr4))
+// const sum= (arr)=> {
+//     let sum1 = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//     sum1 += arr[i];
+// }
+//     return sum1/ arr.length
+// }
+// console.log(sum(arr4))
+
+
+// PROBLEM 7
+
+// const fizzBuzz = (num)=> {
+//         for (let i = 0; i <= num; i++){
+//             if( i % 3 ===0 && i % 5 ===0){
+//             console.log("FizzBuzz")
+//             }
+//             else if ( i % 3 === 0) {
+//                 console.log("Fizz")
+//             } else if ( i % 5 === 0) {
+//                 console.log("Buzz")
+//             } else {
+//                 console.log(i)
+//             } 
+//         } 
+//     }
+
+// console.log(fizzBuzz(27))
+
+
+
+
+
+// PROBLEM 8
+
+// let arr1 = [1.0,2,3,4,5]
+// let arr2 = [1,2,3,4,5]
+// let arr3 = [1,2,3,4,5]
+// let arr4 = [1,42,1,541,42,5]
+// let arr5 = [1,42,1,541,42,5]
+// const valueIsGreaterThanAverageOfArr = (num,arr) => {
+//      let sum = 0
+//      for (i = 0; i < arr.length; i++){
+
+//          sum += arr[i];
+//     }
+//        let ave = sum / arr.length 
+//        if ( num > ave) {
+//            console.log("true")
+//        } else {
+//            console.log("false")
+//        }
+//     } 
+// console.log(valueIsGreaterThanAverageOfArr(105.4,arr5))
+
+
+
+
+
+
 
