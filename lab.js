@@ -126,3 +126,12 @@ function valueIsGreaterThanAverageOfArr(input1, input2){
 }
 
 valueIsGreaterThanAverageOfArr(1,input2)
+
+
+// console.log("Problem 9")
+
+// let input3 = [1,2,3,4]
+// console.log(smallestValueInArr(input3))
+// function secondSmall(input){
+//     for (i = 0; i<input3.length;)
+// }
