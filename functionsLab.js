@@ -53,25 +53,22 @@
 
 // } console.log(smallestValueInArr(arr))
 
-let arr1 = [89, 11, 77, 13, 33, 15];
-function smallestValueInArr(arr){
+// let arr1 = [89, 11, 77, 13, 33, 15];
+// function smallestValueInArr(arr){
 
-    let smallValue = Infinity
+//     let smallValue = Infinity
     
-    for (let i = 0; i < arr.length; i ++) {
-        if (arr[i]<smallValue){
-            smallValue = arr[i]
-        }
+//     for (let i = 0; i < arr.length; i ++) {
+//         if (arr[i]<smallValue){
+//             smallValue = arr[i]
+//         }
         
-    } 
-    return smallValue
-}
-console.log(smallestValueInArr(arr1))
-console.log(smallestValueInArr([4, 6, 1, 5]))
-console.log(smallestValueInArr([67, 78, 89, 34, 56]))
-
-
-
+//     } 
+//     return smallValue
+// }
+// console.log(smallestValueInArr(arr1))
+// console.log(smallestValueInArr([4, 6, 1, 5]))
+// console.log(smallestValueInArr([67, 78, 89, 34, 56]))
 
 // ```
 // Sample inputs and expected outputs:
@@ -81,3 +78,50 @@ console.log(smallestValueInArr([67, 78, 89, 34, 56]))
 // input: [0,0,0,0,0,0,0,0,0,0], expectedOutput: 0
 // input: [-4,-59,-348,-34,-4], expectedOutput: -348
 // ```
+
+// ## Question Four
+
+// Write a function named occurrences that counts how many characters in
+//  a string match a specific character.
+
+// function ocurrences(char, str) {
+//      let count = 0; 
+//     for (let i = 0; i < str.length; i++){
+//         if (str[i] === char) {
+//             count++ 
+
+//         } 
+        
+//     } 
+//     return count
+// } 
+// console.log(ocurrences('a','maria'))
+// console.log(ocurrences('o',"motorcycle"))
+
+// ```
+// Sample inputs and expected outputs:
+
+// inputOne: "l", inputTwo: "hello", expectedOutput: 2
+// inputOne: "r", inputTwo: "hello world!", expectedOutput: 1
+// inputOne: " ", inputTwo: "Now with some spaces", expectedOutput: 3
+// inputOne: "E", inputTwo: "cApItAlS aRe DiFfErEnT", expectedOutput: 2
+
+// ## Question Five
+
+// Write a function named average that returns the average of an array of numbers
+
+const average = (arr) => {
+    let sum = 0
+    for (i = 0; i < arr.length; i++) {
+        sum += arr[i]
+    }
+    return sum/arr.length
+}
+console.log(average([1,2,3]))
+// ```
+// Sample inputs and expected outputs:
+
+// input: [1,2,3,4,5], expectedOutput: 3
+// input: [1,42,1,541,42,6], expectedOutput: 105.5
+// input: [-10,5,-15,20], expectedOutput: 0
+// input: [1.5, 2.25, 4.5, -1.5], expectedOutput: 1.6875
