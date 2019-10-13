@@ -226,3 +226,19 @@ console.log(occurences("r", "hello world!"));
 console.log(occurences(" ", "Now with some spaces"));
 console.log(occurences("E", "cApItAlS aRe DiFfErEnT"));
 
+// Problem 5
+
+let arr  = [1, 2, 3, 4, 5] 
+let arr2 = [1,42,1,541,42,6]
+let arr3 = [-10,5,-15,20]
+let arr4 = [1.5, 2.25, 4.5, -1.5]
+
+const sum= (arr)=> {
+    let sum1 = 0;
+    for (let i = 0; i < arr.length; i++) {
+    sum1 += arr[i];
+}
+    return sum1/ arr.length
+}
+console.log(sum(arr4))
+
