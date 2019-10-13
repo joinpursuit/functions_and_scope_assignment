@@ -15,33 +15,31 @@ function smallest(num1, num2){
 console.log(smallest(10, 5))
 
 //Question 3
-array = [1,2,3,4,5,5]
-function smallestValueInArr(array){
-    let smallNum = 0
-    for(let i = 0; i < array.length; i++){
-         if (array[i]) {
-        smallNum = array[i]
 
+function smallestValueInArr(array){
+    let smallNum = array[0]
+    for(let i = 0; i < array.length; i++){
+        if(array[i] < smallNum){
+            smallNum = array[i]
     } 
     }  
     return smallNum
 } 
-console.log(smallestValueInArr(array))
+console.log(smallestValueInArr([10,2,3,4,5,5]))
 
 //Question 4
-let myString = "Hello"
-function occurences(string){
-    for(let i = 0; i < myString.length; i++){
-        if(string = myString[i]){
-            let count = 0
-            count ++
-        } else {
-            count = 0
-            return count
-        }
+
+function occurences(a, string){
+    let count = 0
+    for(let i = 0; i < string.length; i++){
+        if(a === string[i]){
+            count++
+        } 
     }
+    return count
 }
-console.log(occurences("l"))
+
+console.log(occurences("i", "Hi, it is nice to meet you!"))
 
 
 //Question 5
@@ -134,3 +132,6 @@ function secondsmallestInt(array){
 }
 
 console.log(secondsmallestInt([1,3, 4, 5, 6, 2, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]))
+
+//question 10
+
