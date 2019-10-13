@@ -223,3 +223,42 @@
 //  }
  
 //  console.log(valueIsGreaterThanAverageOfArr(inputOne, inputTwo))
+
+// //
+
+// ## Question Nine
+// Write a function that finds the second smallest Int an an array of Ints
+arr = [7, 9, 4, 5, 2, 3]
+
+// function secondSmallInt(arr) {
+//     let smallestNum = arr[0];
+//     let secondSmallestNum = smallestNum;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] < smallestNum) {
+//             secondSmallestNum = smallestNum;
+//             smallestNum = arr[i];
+//         } else if (arr[i] < secondSmallestNum && secondSmallestNum > smallestNum) {
+//             secondSmallestNum = arr[i];
+//         }
+//     }
+//     return secondSmallestNum;
+// }
+// console.log(secondSmallInt(arr));
+
+// ES6
+
+const secondSmallInt = (arr) => {
+    let smallestNum = arr[0];
+    let secondSmallestNum = smallestNum;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i < smallestNum]) {
+        secondSmallestNum = smallestNum;
+        smallestNum = arr[i];
+        } else if (arr[i] < secondSmallestNum && secondSmallestNum > smallestNum) {
+            secondSmallestNum = arr[i];
+        }
+    }
+    return secondSmallestNum; 
+}
+
+console.log(secondSmallInt(arr));
