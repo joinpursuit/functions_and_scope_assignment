@@ -19,7 +19,7 @@
 
 const double = num => num * 2
 
-console.log(double(5))
+// console.log(double(5))
 // ## Question Two
 
 // Write a function named smallest that takes in two numbers and returns the smaller number
@@ -178,7 +178,7 @@ const frequencyMap = string => {
         } return obj
         }
 
-console.log(frequencyMap(string))
+// console.log(frequencyMap(string))
 // ## Question Seven
 
 // Write a function called fizzBuzz that logs the numbers from 1 to n as with the following replacements:
@@ -247,7 +247,7 @@ const fizzBuzz = (num1, num2) => {
         
     } 
     }
-fizzBuzz(1, 12)
+// fizzBuzz(1, 12)
 
 // ## Question Eight
 
@@ -263,6 +263,31 @@ fizzBuzz(1, 12)
 // inputOne: 105.4, inputTwo: [1,42,1,541,42,5], expectedOutput: true
 // ```
 
+// function valueIsGreaterThanAverageOfArr(inputOne, inputTwo){
+//     let sum = 0
+//     for(let i = 0; i < inputTwo.length; i++){
+//         sum += inputTwo[i]
+//         avg = sum / inputTwo.length
+//     }
+//         if(inputOne > avg){
+//             console.log('True')
+//         } else {
+//             console.log('False')
+//         }
+//     }
+const valueIsGreaterThanAverageOfArr = (inputOne, inputTwo) => {
+    let sum = 0
+    for(let i = 0; i < inputTwo.length; i++){
+        sum += inputTwo[i]
+        avg = sum / inputTwo.length
+    }
+        if(inputOne > avg){
+            console.log('True')
+        } else {
+            console.log('False')
+        }
+    }
+valueIsGreaterThanAverageOfArr(100.8, [1, 42, 1, 541, 42, 5])
 // ## Question Nine
 
 // Write a function that finds the second smallest Int an an array of Ints
@@ -276,7 +301,11 @@ fizzBuzz(1, 12)
 // input: [910,158,197,874,58,835,765,182,562,942,399,35,269,704,634,518,948,744,786,181,801,952,175,97,222,705,121,928,126,35,346,174,214,906,906,886,245,34,239,376,34,902,355,528,844,265,796,27,721,905,877,567,911,223,472,132,426,359,617,402,89,144,976,774,961,386,380,75,504,854,862,101,271,914,673,288,844,633,40,477,346,479,727,62,604,523,852,789,234,374,156,855,819,422,741,543,994,587,37,100], expectedOutput: 34
 // input: [807,909,-22,424,244,873,-907,-350,-780,576,-177,278,-855,296,-33,-609,-664,-126,-469,-57,-376,-424,-477,-795,-481,-806,545,727,-879,210,-114,-783,-156,45,781,369,35,900,904,-2,168,489,-329,608,-287,40,442,362,-560,236,-583,698,544,-154,478,535,-397,363,470,-49,49,631,-62,-293,-419,-528,753,-809,-48,-888,606,-889,-908,672,-783,-921,-198,-428,701,-30,106,500,-106,199,-793,392,873,330,366,45,840,649,-135,-850,174,-338,901,-753,402,-62,554,-579,863,955,-999,-13,851,760,-523,-968,225,-173,-605,-759,306,657,844,168,-270,883,963,-835,624,570,705,333,-293,283,382,926,839,264,602,-940,160,-369,-770,-792,722,321,88,-176,-911,203,486,-175,-529,187,-668,518,-282,162,-165,-34,544,538,-828,-562,-154,591,345,-241,962,801,-632,-921,-710,588,-642,113,128,-242,56,716,-709,232,-870,241,-612,-583,-199,762,-601,-410,-896,-493,664,531,-613,-285,-951,-589,243,819,-195,911,-701,-368,-85,-316], expectedOutput: -968
 // ```
-
+function secondSmallestInt(arr) {
+    for(let i = 0; i < arr.length; i++){
+        
+    }
+}
 // ## Question Ten
 
 // Sign up for an account on [Code Wars](https://www.codewars.com/collections/javascript-basics-2) and solve the questions in this collection.
