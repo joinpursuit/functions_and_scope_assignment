@@ -178,14 +178,30 @@
 // console.log(fizzBuzz(1, 100))
 
 
-const valueIsGreaterThanAverageOfArr = (arr, num)=>{
-    let sumOfArr = 0
-    for (i = 0; i < arr.length; i++)
-        sumOfArr += arr[i]
-    if (sumOfArr/arr.length < num*2){
-    return true
-} else {
-    return false
+// const valueIsGreaterThanAverageOfArr = (arr, num)=>{
+//     let sumOfArr = 0
+//     for (i = 0; i < arr.length; i++)
+//         sumOfArr += arr[i]
+//     if (sumOfArr/arr.length < num*2){
+//     return true
+// } else {
+//     return false
+// }
+// }
+// console.log(valueIsGreaterThanAverageOfArr([100,0,2,3,4,5], 2))
+
+const secondSmallestInt = arr=>{
+    let small = Infinity
+    let smaller = Infinity
+    for(i = 0; i < arr.length; i++){
+        if (arr[i] < smaller){
+        smaller = arr[i] 
+    } else if(arr[i] < small){
+
+        small = arr[i]
+    }
+    
 }
+return small
 }
-console.log(valueIsGreaterThanAverageOfArr([100,0,2,3,4,5], 2))
+console.log(secondSmallestInt([1,5,3,4]))
