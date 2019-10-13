@@ -35,7 +35,6 @@ const smallestNumber = (a,b) => {
 
 
 
-
 ## Question Three
 Write a function named smallestValueInArr that takes in an array of numbers and returns the smallest number
 
@@ -53,6 +52,19 @@ function smallestValue(arr) {
 array1 = [4,5,8,9]
 smallestValue(array1)
 
+
+const smallestValue = (arr) => {
+  let smallestNumber = arr[0]
+  for (let i =0;  i < arr.length; i++){
+      if(arr[i] < smallestValue){
+        smallestValue = arr[i]      
+      }
+  } 
+  return smallestNumber
+}
+
+array1 = [4,5,8,9]
+smallestValue(array1)
 
 
 ## Question Four
