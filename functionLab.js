@@ -60,3 +60,21 @@ function averageArr(array1){
 console.log(averageArr(array1))
 
 //Question 6
+
+function frequencyMap(myString){
+    let mapChar = {}
+    for (let i = 0; i < myString.length; i++) {
+        if(mapChar.hasOwnProperty(myString[i])){
+            mapChar[myString[i]]++
+        }else {
+            mapChar[myString[i]] = 1
+        }
+        
+        //count the keys (without repeating same char)
+        
+        //count how many times they occur save the value to respective key  
+    }
+    return mapChar
+}
+
+console.log(frequencyMap("average"))
