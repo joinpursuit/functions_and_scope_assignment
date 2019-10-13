@@ -62,12 +62,12 @@ console.log(averageArr(array1))
 //Question 6
 
 function frequencyMap(myString){
-    let mapChar = {}
-    for (let i = 0; i < myString.length; i++) {
-        if(mapChar.hasOwnProperty(myString[i])){
-            mapChar[myString[i]]++
+    let mapChar = {}  //created the object
+    for (let i = 0; i < myString.length; i++) {  //looping through the string
+        if(mapChar.hasOwnProperty(myString[i])){  //checking to see if the key has a property inside the object
+            mapChar[myString[i]]++  //if the key is inside the object we are adding one to its value
         }else {
-            mapChar[myString[i]] = 1
+            mapChar[myString[i]] = 1  //if the key isnt inside the object we are creating it and setting it to one
         }
         
         //count the keys (without repeating same char)
@@ -78,3 +78,20 @@ function frequencyMap(myString){
 }
 
 console.log(frequencyMap("average"))
+
+//Question 7
+    function fizzBuzz (n) {
+        for (let i = 1; i <= n; i++) {
+            if (i % 3 === 0 && i % 5 === 0){
+                console.log("FIZZBUZZ")
+            } else if(i % 3 === 0){
+                console.log("Fizz")
+            }else if (i % 5 === 0) {
+                console.log("Buzz")
+            }else {
+                console.log(i)
+            }
+        }
+    }
+
+console.log(fizzBuzz(100))
