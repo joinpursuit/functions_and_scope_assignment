@@ -202,6 +202,6 @@ const secondSmallestInt = arr=>{
     }
     
 }
-return small
+// return small
 }
 console.log(secondSmallestInt([1,5,3,4]))
