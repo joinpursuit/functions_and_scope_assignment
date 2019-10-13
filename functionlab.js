@@ -55,30 +55,55 @@
 // }
 // console.log(average(arr))
 
-//6
+// //6
+// let word = "hello"
 
-// let word = "Hello"
+// function frequencyMap(string){
 // let obj = {}
-// for (i = 0; i < word.length; i++){
-//     obj[word[i]] = 0
+// for(i = 0; i < string.length; i++){
+//    obj[string[i]] = 0
+//  }
+// for( key in obj){
+//    for(i =0; i< string.length; i++){
+//      if(key === string[i]){
+//        obj[string[i]] +=1
+//      }
+//     }
+// }
+// return obj
+// } 
+
+// console.log(frequencyMap(word))
+
+// let arrNin = [1,2,3,4];
+// // let arr = [213,331,780]
+
+// function secondSmallest(arr){
+//     let firSmal = Infinity
+//     let secSmal = Infinity
+//     for( let indNin = 0; indNin < arr.length; indNin ++){
+//         if( arr[indNin] < secSmal){
+//             secSmal = arr[indNin]
+//         } else if ( arr[indNin] < firSmal){
+//             firSmal = arr[indNin]
+//         }
+//     }
+//     return secSmal
 // }
 
 
-// for (key in obj){
-//     for (i = 0; i< word.length; i++ )
-//     if (key === word[i]){
-//      obj[word[i]] += 1
+// console.log(secondSmallest(arrNin))
+
+// arrt = [4,5,9,10,11]
+
+// function even(arr){
+//     let newArr = []
+//     for( let i = 0; i < arr.length; i++){
+//         if(arr[i] % 2 === 0 ){
+//             newArr.push(arr[i])
+//         }
+//     }
+// return newArr
 // }
-// }
-// console.log(obj)   
-let string = "hello"
-let object = {}
-function frequencyMap(string, object){
-    for (i = 0; i < string.length; i++)
-    object[string[i]] = 0
-    for (key in object)
-    for (i = 0; i < string.length; i++)
-        if (key === string[i])
-        object[string[i]] += 1
-}
-console.log(frequencyMap(string))
+
+// console.log(even(arrt))
