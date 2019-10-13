@@ -95,3 +95,42 @@ console.log(frequencyMap("average"))
     }
 
 console.log(fizzBuzz(100))
+
+// Question 8
+
+
+function valueIsGreaterThanAverageOfArr(array, num) {
+    let sum = 0
+    for ( i = 0; i < array.length; i++) {
+        sum = sum + array[i]
+    }
+    let average = sum / array.length
+    let x = num * 2
+    if (average > x) {
+        return "Average is greater than double"
+    }else {
+        return "Double is greater than average"
+    }
+}
+console.log(valueIsGreaterThanAverageOfArr([1, 2, 3, 4, 5], 9))
+
+
+//question 9
+
+function secondsmallestInt(array){
+    let smallestInt =  array[0]
+    let secondSmallest = Infinity
+    for( let i = 0; i < array.length; i++){
+        if(array[i] < smallestInt){
+            smallestInt = array[i]
+        }
+    }
+    for( let i = 0; i < array.length; i++){
+        if (array[i] > smallestInt && array[i] <= secondSmallest){
+            secondSmallest = array[i]
+        }
+    }
+    return secondSmallest
+}
+
+console.log(secondsmallestInt([1,3, 4, 5, 6, 2, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]))
