@@ -92,7 +92,7 @@ console.log(occurrences("i", "Mississippi"));
 
 
 //Problem 5
-
+//ES6
 const average = (arr) => {
     let sum = 0
     for(let i = 0; i < arr.length; i++) {
@@ -101,3 +101,43 @@ const average = (arr) => {
     return sum/arr.length;
 }
 console.log(average([1,42,1,541,42,6]));
+
+//Problem 6
+const frequencyMap = (string) => {
+    let outPut = {}
+    for(let i = 0; i < string.length; i++) {
+        if(outPut[string[i]]) {
+            outPut[string[i]]+= 1
+        } else {
+            outPut[string[i]] = 1
+        }
+        }
+        return outPut
+    }
+console.log(frequencyMap("Mississippi"));
+
+
+//Problem 7
+const fizzBuzz = (num) => {
+    for(let i = 0; i <= num; i++) {
+        if(i % 3 === 0 && i % 5 === 0) {
+            console.log("FizzBuzz")
+        } else if(i % 3 === 0) {
+            console.log("Fizz")
+        } else if(i % 5 === 0) {
+            console.log("Buzz")
+        } else {
+           console.log(i)
+        }
+    }
+}
+
+console.log(fizzBuzz(20))
+
+
+//Problem 8
+
+
+
+
+
