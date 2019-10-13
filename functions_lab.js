@@ -13,9 +13,9 @@
 // input: -2, expectedOutput: -4
 // input: 99, expectedOutput: 198
 // ```
-function double(num) {
-    return num * 2
-}
+// function double(num) {
+//     return num * 2
+// }
 
 const double = num => num * 2
 
@@ -218,23 +218,23 @@ console.log(frequencyMap(string))
 // 26
 // Fizz
 // ```
-function fizzBuzz(num){
-for(let i = 0; i <= num; i+= 1){
-    if(num % 3 === 0 && num % 5 === 0){
-        "FIZZBUZZ"
-    } else if (num % 3 === 0){
-        num[i]++
-        return "Fizz"
-    } else if (num % 5 === 0){
-        return "Buzz"
+
+function fizzBuzz(num1, num2) {
+for(let i = num1; i <= num2; i++){
+    if(i % 3 === 0 && i % 5 === 0){
+        console.log("Fizzbuzz")
+    } else if (i % 3 === 0){
+       console.log("Fizz")
+    } else if (i % 5 === 0){
+        console.log("Buzz")
     } else {
-        num
+        console.log(i)
     }
     
 } 
 }
 
-console.log(fizzBuzz(15))
+fizzBuzz(1, 12)
 // ## Question Eight
 
 // Write a function named valueIsGreaterThanAverageOfArr that takes in an array of numbers and a number and returns whether the Double is greater than the average
