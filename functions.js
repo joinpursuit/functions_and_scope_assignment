@@ -8,6 +8,8 @@
    return number * number
  }
 
+const doubleNumber= (number) => {return number * number}
+
 
 ## Question Two
 
@@ -20,6 +22,18 @@ function smallestNumber (a,b) {
     return b
   }
 }
+
+
+const smallestNumber = (a,b) => {
+  if (a < b) {
+    return a
+  } else {
+    return b
+}
+}
+
+
+
 
 
 ## Question Three
