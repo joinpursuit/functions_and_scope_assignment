@@ -3,7 +3,6 @@ function double(num) {
     return num * 2;
 }
 console.log(double(4));
-
 //question 2
 function smallest(num1,num2) {
     if (num1 > num2){
@@ -13,7 +12,6 @@ function smallest(num1,num2) {
     }
 }
 console.log(smallest(0,3));
-
 //question 3
 function smallestValueInArr(arr) {
     let num  = arr[0] 
@@ -38,9 +36,7 @@ function occurrences (char,str){
 return count;
 }
 console.log(occurrences("l","Hello World")); //3
-
 //question 5
-
 function avg(arr) {
     sum = 0
     for (let i = 0; i < arr.length; i++) {
@@ -49,37 +45,38 @@ function avg(arr) {
     return sum / arr.length
 }
 console.log(avg([1,2,3,4,5])) //3
-
-
-
 //question 6 
-function frequencyMap(str) {
-    let map = {}
-    for(let i = 0; i < str.lengh; i++){
-        map += str[i]
-
+const  frequencyMap =(str) => {
+    
+    let map = {};
+    for(let i = 0; i < str.length; i++){
+        let char = str.charAt(i);
+        if(map[char]){
+            map[char]++;
+       }
+       else {
+           map[char] = 1;
+       }
     }
-    return str
+    return map;
 }
 console.log(frequencyMap("Hello"));
-
 //question 7
-
-
+console.log("");
 function theN(n){
-    for (let i = 0; i <= n; i++) 
+    for (let i = 1; i <= n; i++) { 
         if (i % 3 === 0 && i % 5 === 0){
-            console.log("FizzBuzz")
+            console.log ("FizzBuzz")
         } else if (i % 3 === 0) {
             console.log("Fizz")
         } else if (i % 5 === 0){
             console.log("Buzz")
         } else {
-            console.log(i)
+            console.log(i);
         }
     }
-    console.log(theN(20))
-
+}
+    theN(20);
 //question 8
 function valueIsGreaterThanAverageOfArr(arr) {
         sum = 0
@@ -87,9 +84,26 @@ function valueIsGreaterThanAverageOfArr(arr) {
             sum += arr[i]
         }
     if ((sum / arr.length) > (sum * 2)){
-        console.log("the average is bigger")
+        return "the average is bigger"
     } else {
-        console.log("the double is bigger")
+        return "the double is bigger"
     }
 }
-    valueIsGreaterThanAverageOfArr([1,2,3,4,5])
+   console.log(valueIsGreaterThanAverageOfArr([1,2,3,4,5]));
+   //question 9;
+   const secondSmall = (arr) => {
+    let smallest = Infinity
+    let secondSmallest = Infinity
+       for(let i = 0; i < arr.length; i++){
+            if(arr[i] < smallest){
+                smallest = arr[i]
+            }
+            else if(arr[i] < secondSmallest && arr != smallest){
+                secondSmallest = arr[i]
+            }
+        }
+        return secondSmallest
+    }
+   console.log(secondSmall([7,1,5,3,4,5]));
+   // Ohidur R.
+   // Syn P.
