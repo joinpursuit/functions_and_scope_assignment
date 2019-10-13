@@ -110,14 +110,14 @@
 
 // Write a function named average that returns the average of an array of numbers
 
-const average = (arr) => {
-    let sum = 0
-    for (i = 0; i < arr.length; i++) {
-        sum += arr[i]
-    }
-    return sum/arr.length
-}
-console.log(average([1,2,3]))
+// const average = (arr) => {
+//     let sum = 0
+//     for (i = 0; i < arr.length; i++) {
+//         sum += arr[i]
+//     }
+//     return sum/arr.length
+// }
+// console.log(average([1,2,3]))
 // ```
 // Sample inputs and expected outputs:
 
@@ -125,3 +125,29 @@ console.log(average([1,2,3]))
 // input: [1,42,1,541,42,6], expectedOutput: 105.5
 // input: [-10,5,-15,20], expectedOutput: 0
 // input: [1.5, 2.25, 4.5, -1.5], expectedOutput: 1.6875
+
+//## Question Six
+
+//Write a function named frequencyMap that takes a string as input and 
+//returns an object that maps each character its number of occurrences
+
+const frequencyMap = (str) => {
+    let obj = {}
+    for (i = 0; i < str.length; i++) {
+        if (Object.keys(obj)[Object.keys(obj).length - 1] === str[i] ) {
+            obj[str[i]]++  
+        } else { 
+            obj[str[i]] = 1
+        }
+
+    } return obj
+} 
+console.log(frequencyMap("aassskkkk"))
+
+// ```
+// Sample inputs and expected outputs:
+
+
+// input: "hello", expectedOutput: {"h": 1, "e": 1, "l": 2, "o": 1}
+// input: "aaaaaAAA", expectedOutput: {"a": 5, "A":3}
+// input: "More words", expectedOutput: {"M": 1, "o": 2, "r": 2, "e": 1, " ": 1, "w": 1, "d": 1, "s": 1}
