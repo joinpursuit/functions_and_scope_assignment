@@ -193,34 +193,36 @@
 
 // PROBLEM 3
 
-let arr1 = [1.0, 2, 3, 4, 5, 5] 
-let arr2 = [6, 5, 4, 3, 2, 1]
-let arr3 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-let arr4 = [-4, -59, -348, -34, -4]
-const smallestValueInArr = (arrNum) => {
-    let smallestNumber = arrNum[0] 
-    for( let i = 0; i < arrNum.length; i++){
-        if (arrNum[i]  < smallestNumber){
-            smallestNumber = arrNum[i];
-        }
-        // console.log(i)
-    } 
-    return smallestNumber;
-}
-console.log(smallestValueInArr(arr4));
+// let arr1 = [1.0, 2, 3, 4, 5, 5] 
+// let arr2 = [6, 5, 4, 3, 2, 1]
+// let arr3 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// let arr4 = [-4, -59, -348, -34, -4]
+// const smallestValueInArr = (arrNum) => {
+//     let smallestNumber = arrNum[0] 
+//     for( let i = 0; i < arrNum.length; i++){
+//         if (arrNum[i]  < smallestNumber){
+//             smallestNumber = arrNum[i];
+//         }
+//         // console.log(i)
+//     } 
+//     return smallestNumber;
+// }
+// console.log(smallestValueInArr(arr4));
+
 
 //problem 4
 
-// function occurences(letter, str) {
-//     let count = 0;
-//     for (let i = 0; i < str.length; i++) {
-//         if (str[i] === letter) {
-//             count +=1
-//         }  
-//     } 
-//     return letter + ":" + count  
-// }
-// console.log(occurences("l", "hello"));
-// console.log(occurences("r", "hello world!"));
-// console.log(occurences(" ", "Now with some spaces"));
-// console.log(occurences("E", "cApItAlS aRe DiFfErEnT"));
+const occurences = (letter, str) => {
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === letter) {
+            count +=1
+        }  
+    } 
+    return letter + ":" + count  
+}
+console.log(occurences("l", "hello"));
+console.log(occurences("r", "hello world!"));
+console.log(occurences(" ", "Now with some spaces"));
+console.log(occurences("E", "cApItAlS aRe DiFfErEnT"));
+
