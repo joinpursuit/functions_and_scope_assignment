@@ -13,10 +13,13 @@
 // input: -2, expectedOutput: -4
 // input: 99, expectedOutput: 198
 // ```
-// function double(num) {
-//     return num * 2
-// }
-// console.log(double(5))
+function double(num) {
+    return num * 2
+}
+
+const double = num => num * 2
+
+console.log(double(5))
 // ## Question Two
 
 // Write a function named smallest that takes in two numbers and returns the smaller number
@@ -30,14 +33,23 @@
 // inputOne: 2.3, inputTwo: 2.03, expectedOutput: 2.03
 // ```
 // function smallest(num1, num2) {
-//     if(num1 > num2) {
-//         return num2
-//     } else if(num1 < num2) {
-//         return num1
-//     } else {
-//         return "numbers are equal"
-//     }
+    // if(num1 > num2) {
+    //     return num2
+    // } else if(num1 < num2) {
+    //     return num1
+    // } else {
+    //     return "numbers are equal"
+    // }
 // }
+const smallest = (num1, num2) => {
+    if(num1 > num2) {
+        return num2
+    } else if(num1 < num2) {
+        return num1
+    } else {
+        return "numbers are equal"
+    }
+}
 // console.log(smallest(3, 5))
 // ## Question Three
 
@@ -64,7 +76,15 @@
 //         }
 //     }
 // }
-
+const smallestValueInArr = arr => {
+    for(let i = 0; i < arr.length; i++){
+        let smallestArr = arr[0]
+        if(arr[i] < smallestArr){
+            smallestArr = arr[i]
+            return smallestArr
+        }
+    }
+}
 // console.log(smallestValueInArr(arr1))
 // ## Question Four
 
@@ -86,6 +106,14 @@
 //     }
 //     return count
 // }
+const occurrences = (inputOne, inputTwo) => {
+    let count = 0
+    for(let i = 0; i < inputTwo.length; i++){
+        if(inputTwo[i] === inputOne)
+        count ++
+    }
+    return count
+}
 // console.log(occurrences('e', 'Soupieee'))
 
 // ## Question Five
@@ -108,6 +136,14 @@
 //     }
 //     return avg
 // }
+const average = arr => {
+    let median = 0
+    for(let i = 0; i < arr.length; i++){
+        median += arr[i]
+        avg = median / arr.length
+    }
+    return avg
+}
 // console.log(average([2, 4, 6]))
 // ## Question Six
 
@@ -123,7 +159,16 @@
 // ```
 let string = "how now brown cow"
 let obj = {}
-function frequencyMap(string) {
+// function frequencyMap(string) {
+//     for(let i = 0; i < string.length; i++) {
+//         if(obj[string[i]]) {
+//             obj[string[i]] += 1
+//             } else {
+//                 obj[string[i]] = 1
+//             }
+//         } return obj
+//         }
+const frequencyMap = string => {
     for(let i = 0; i < string.length; i++) {
         if(obj[string[i]]) {
             obj[string[i]] += 1
