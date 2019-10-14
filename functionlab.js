@@ -7,7 +7,9 @@ console.log(double(4));
 function smallest(num1,num2) {
     if (num1 > num2){
         return num2
-    }else {
+    } else if (num1 == num2) {
+        return "they are equal"
+    } else {
         return num1
     }
 }
