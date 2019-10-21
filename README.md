@@ -4,6 +4,11 @@
 
 Write a function named double that takes in a number and returns that number times two
 
+function double(num){
+    return num * 2
+}
+
+
 
 ```
 Sample inputs and expected outputs:
@@ -19,6 +24,17 @@ input: 99, expectedOutput: 198
 Write a function named smallest that takes in two numbers and returns the smaller number
 
 ```
+let x = 1
+let y = 2
+
+function smallest(num1, num2){
+    if (num1<num2){
+        return num1
+    } else
+    return num2
+}
+console.log(smallest(1,2))
+
 Sample inputs and expected outputs:
 
 inputOne: 8, inputTwo: 3, expectedOutput: 3.0
@@ -31,7 +47,17 @@ inputOne: 2.3, inputTwo: 2.03, expectedOutput: 2.03
 
 Write a function named smallestValueInArr that takes in an array of numbers and returns the smallest number
 
+let arr1 = [1.0,2,3,4,5,5]
 
+function smallestValueInArr(arr){
+    let smallest = arr[0]
+    for (let i=0;i<arr.length;i++){
+        if (smallest > arr[i])
+        smallest = arr[i]
+    }
+    return smallest
+} 
+console.log(smallestValueInArr(arr1))
 ```
 Sample inputs and expected outputs:
 
@@ -45,6 +71,17 @@ input: [-4,-59,-348,-34,-4], expectedOutput: -348
 
 Write a function named occurrences that counts how many characters in a string match a specific character.
 
+function occurrences(inputOne,inputTwo){
+    freq=0
+    for (let i=0;i < inputTwo.length; i++){
+        if (inputOne === inputTwo[i]){
+        freq++
+        }
+    }
+    return freq
+}
+
+
 ```
 Sample inputs and expected outputs:
 
@@ -57,6 +94,17 @@ inputOne: "E", inputTwo: "cApItAlS aRe DiFfErEnT", expectedOutput: 2
 ## Question Five
 
 Write a function named average that returns the average of an array of numbers
+
+let arr1 = [1,2,3,4,5]
+function average(arr){
+    sum=0
+    for (i=0; i < arr.length; i++){
+        sum +=arr[i]
+    } 
+    avg = sum / arr.length
+    return avg
+} 
+console.log(average(arr1))
 
 ```
 Sample inputs and expected outputs:
@@ -129,7 +177,7 @@ Write a function named valueIsGreaterThanAverageOfArr that takes in an array of 
 Sample inputs and expected outputs
 
 inputOne: 4.0, inputTwo: [1.0,2,3,4,5], expectedOutput: true
-inputOne: 2, inputTwo: [1,2,3,4,5], expectedOutput: false
+inputOne: 2, inputTwo: [1,2,3,4,5], expectedOutput: true
 inputOne: 3, inputTwo: [1,2,3,4,5], expectedOutput: false
 inputOne: 100.8, inputTwo: [1,42,1,541,42,5], expectedOutput: false
 inputOne: 105.4, inputTwo: [1,42,1,541,42,5], expectedOutput: true
