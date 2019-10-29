@@ -66,7 +66,14 @@ input: [1,42,1,541,42,6], expectedOutput: 105.5
 input: [-10,5,-15,20], expectedOutput: 0
 input: [1.5, 2.25, 4.5, -1.5], expectedOutput: 1.6875
 ```
+sum = [1, 2, 3, 4, 5]
 
+function average(arr) {
+  for(let i = 0; i < arr.length; i++) {
+
+} 
+ console.log(average(arr[i] / arr.length));
+}
 
 ## Question Six
 
