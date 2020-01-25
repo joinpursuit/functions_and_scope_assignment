@@ -19,8 +19,9 @@ function smallestValueInArr(arr){
     let smallest = 0
     for (let i = 0; i < arr.length; i++){
         if (arr[i] < arr[i+1]){
-            smallest = arr[i]
-        }continue
+                smallest = arr[i]
+                continue
+        }
     }return smallest
 }
-console.log(smallestValueInArr(arr1))
+//console.log(smallestValueInArr(arr1))
