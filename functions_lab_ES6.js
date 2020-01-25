@@ -58,3 +58,43 @@ const average = (arr) => {
       return output;
   }
 //7.
+const fizzbuzz = () => {
+for (let i = 0; i <= name; i++){
+    if(i % 3 === 0 && i % 5 === 0){
+        console.log("FizzBuzz")
+    }else if (i % 5 === 0){
+        console.log("Buzz")
+    }else if(i % 3 === 0){
+        console.log("Fizz")
+    }else{
+        console.log(i)
+    }
+}
+}
+//8.
+const valueIsGreaterThanAverageOfArr = (arr, num) =>{
+    let total = 0;
+    for (let i = 0; i < arr.length; i++){
+        total += arr[i]
+    }
+    let average = total/ arr.length;
+    if(average < (num * 2)){
+        return true;
+    }else{
+        return false;
+    }
+}
+//9.
+const secondSmallest = (arr) => {
+    let smallest = Infinity;
+    let secondSmallest = Infinity;
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] < smallest){
+            secondSmallest = smallest;
+            smallest = arr[i];
+        }else if(arr[i] < secondSmallest){
+            secondSmallest = arr[i];
+        }
+    }
+}
+//10.
