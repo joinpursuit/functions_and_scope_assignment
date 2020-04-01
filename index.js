@@ -3,7 +3,6 @@
 const double = (num) => {
     return num * 2
 }
-
 console.log(double(4))
 
 //Question 2
@@ -18,3 +17,15 @@ const smallest = (num1, num2) => {
     }
 }
 console.log(smallest(2.3 , 2.03))
+
+//Question 3
+
+let arr = [6,5,4,3,2,1]
+
+const smallestValueInArr = (arr) => {
+  return Math.min(...arr)
+}
+console.log(smallestValueInArr(arr))
+
+//Question 4
+
