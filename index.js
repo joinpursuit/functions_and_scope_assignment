@@ -28,16 +28,6 @@ const smallestValueInArr = (arr) => {
 console.log(smallestValueInArr(arr))
 
 //Question 4
-// Write a function named occurrences that counts how many characters in a string match a specific character.
-
-// ```
-// Sample inputs and expected outputs:
-
-// inputOne: "l", inputTwo: "hello", expectedOutput: 2
-// inputOne: "r", inputTwo: "hello world!", expectedOutput: 1
-// inputOne: " ", inputTwo: "Now with some spaces", expectedOutput: 3
-// inputOne: "E", inputTwo: "cApItAlS aRe DiFfErEnT", expectedOutput: 2
-// ```
 
 let char = "E"
 let count = 0
@@ -50,3 +40,16 @@ const occurrences = (str) => {
     return count
 }
 console.log(occurrences("cApItAlS aRe DiFfErEnT"))
+
+//Question 5
+
+let arr = [1.5, 2.25, 4.5, -1.5]
+let sum = 0
+
+const average = (arr) => {
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i]
+  }
+  return sum / arr.length
+}
+console.log(average(arr))
