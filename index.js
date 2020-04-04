@@ -56,21 +56,6 @@ console.log(average(arr))
 
 //Question 6
 
-const occurrences = (str) => {
-    for (let i = 0; i < str.length; i++) {
-      let obj = {}
-      if (obj.hasOwnProperty(str[i])) {
-        obj.str[i]
-      } else {
-        obj.str[i] = 1
-      }
-      return obj
-    }
-  }
-  console.log(occurrences("cApItAlS aRe DiFfErEnT"))
-
-  //Question 7
-
 const frequencyMap = (str) => {
     let obj = {}
     for (let i = 0; i < str.length; i++) {
@@ -82,5 +67,4 @@ const frequencyMap = (str) => {
     }
     return obj
 }
-  console.log(frequencyMap("hello"))
-
+console.log(frequencyMap("hello"))
