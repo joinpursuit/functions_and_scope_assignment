@@ -85,3 +85,18 @@ const fizzBuzz = (n) => {
     }
 } 
 console.log(fizzBuzz(30))
+
+//Question 8
+
+const valueIsGreaterThanAverageOfArr = (arr, num) => {
+    let sum = 0
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i]
+    }
+    if (num * 2 > sum / arr.length) {
+        return true
+    } else if (num * 2 < sum / arr.length) {
+        return false
+    }
+}
+console.log(valueIsGreaterThanAverageOfArr([1,2,3,4,5], 2))
