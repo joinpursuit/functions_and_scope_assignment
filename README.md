@@ -85,7 +85,7 @@ input: "More words", expectedOutput: {"M": 1, "o": 2, "r": 2, "e": 1, " ": 1, "w
 
 Write a function called fizzBuzz that logs the numbers from 1 to n as with the following replacements:
 
-- If the number if a multiple of 3, replace it with "Fizz"
+- If the number is a multiple of 3, replace it with "Fizz"
 - If the number is a multiple of 5, replace it with "Buzz"
 - If the number is a multiple of 3 AND 5, replace it with "FizzBuzz"
 
