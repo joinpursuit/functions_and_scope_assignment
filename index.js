@@ -100,3 +100,21 @@ const valueIsGreaterThanAverageOfArr = (arr, num) => {
     }
 }
 console.log(valueIsGreaterThanAverageOfArr([1,2,3,4,5], 2))
+
+//Question 9
+
+const secondSmallestInt = (arr) => {
+    let smallest = Infinity
+    let secondSmallest = Infinity
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] < smallest ) {
+        secondSmallest = smallest
+        smallest = arr[i]
+      } else if (arr[i] < secondSmallest) {
+        secondSmallest = arr[i]
+      }
+    }
+      return secondSmallest
+}
+console.log(secondSmallestInt([2,1,4,5]))
+  
