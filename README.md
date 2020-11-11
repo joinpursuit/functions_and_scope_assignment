@@ -10,6 +10,10 @@ Input: `12, 4`
 
 Output: `12`
 
+const largerNum = (a,b) => {
+
+}
+
 ## Question 2
 
 Write a function named getDogAge that takes one argument: a dog's age in human years. The function returns the dog's age in dog years. The conversion rate is 1 human year to 7 dog years.
@@ -45,14 +49,13 @@ Output: `19`
 Write a function takes in any number grade and returns a corresponding letter grade.
 
 | Number Grade | Equivalent Letter Grade |
-| :--------: | :---------: |
-| 100 | A+ |
-| 90 - 99 | A |
-| 80 - 89 | B |
-| 70 - 79 | C |
-| 65 - 69 | D |
-| Below 65 | F |
-
+| :----------: | :---------------------: |
+|     100      |           A+            |
+|   90 - 99    |            A            |
+|   80 - 89    |            B            |
+|   70 - 79    |            C            |
+|   65 - 69    |            D            |
+|   Below 65   |            F            |
 
 Example:
 
@@ -70,18 +73,15 @@ Input: `"+", 10`
 
 Output: `++++++++++`
 
-
 ## Question 7
 
 Write a function named `first` that takes a number and returns an array with all the numbers from 1 to n
-
 
 Example:
 
 Input: `first(3)`
 
 Output: `[1, 2, 3]`
-
 
 ## Question 8
 
@@ -92,18 +92,15 @@ If the number is a multiple of 5, log `"Buzz"` instead of the number
 If the number is a multiple of 3 AND 5, log `"FizzBuzz"` instead of the number
 Your function should take in one parameter: x (the number to count up to)
 
-
 ## Question 9
 
 Write a function named `reverse` that takes an array as a parameter. The function should return an array in reverse order.
-
 
 Example:
 
 Input: `reverse([1, 2, 3])`
 
 Output: `[3, 2, 1]`
-
 
 ## Question 10
 
@@ -115,8 +112,6 @@ Input: `[2,1,4,2,5,2,3,23,3,3,2,2,2,24,56,2,2,5,46,2]`
 
 Output: `2`
 
-
-
 ## Question 11
 
 Write a function that sums all the even numbers in an array.
@@ -127,17 +122,15 @@ Input: `[1,2,5,64,23,22,91,3]`
 
 Output: `88`
 
-
 ## Question 12
 
-Write a function that flips an object.  All of the keys are now values and all of the values are now keys.
+Write a function that flips an object. All of the keys are now values and all of the values are now keys.
 
 Example:
 
 Input: `{1: "uno", 5: "cinco"}`
 
 Output: `{"uno": 1, "cinco": 5}`
-
 
 ## Question 13
 
